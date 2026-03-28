@@ -1,8 +1,8 @@
 {
   "index.html": {
     "href": "index.html",
-    "title": "| Ibralogue Docs",
-    "summary": "⚠️ Ibralogue is still in pre-release: This means it is not production-ready yet. Feel free to toy around with it but it is subject to rapid changes due to how early it is into development! Manual | Scripting Reference"
+    "title": "Ibralogue Documentation | Ibralogue Docs",
+    "summary": "Ibralogue Documentation Ibralogue is a simple and extendable dialogue system library for the Unity Game Engine. Write dialogue in .ibra files with a clean, purpose-built syntax that supports branching logic, variables, localization, and more. Get Started New to Ibralogue? Start here: Quickstart — set up your first dialogue in under five minutes Basic Syntax — learn how .ibra files work Manual The manual covers everything from writing dialogue to building custom engine plugins. Syntax Guide Topic Description Basic Syntax Speakers, lines, and file structure Conversations Named conversations and multiple flows Choices Branching dialogue with player choices Jumps Jump between conversations Variables Global and local variable scoping Conditionals If/else branching logic Invocations Call C# methods from dialogue Includes Reuse dialogue across files Engine Topic Description Dialogue Views Built-in views and custom UI Interactions Trigger dialogues from gameplay Engine Plugins Audio, portraits, and custom plugins Events React to dialogue lifecycle events Localization String tables and locale switching Save and Load Persist variables and progress Scripting Reference Full API documentation generated from source: Scripting Reference — all classes, methods, and properties"
   },
   "manual/basic-syntax.html": {
     "href": "manual/basic-syntax.html",
