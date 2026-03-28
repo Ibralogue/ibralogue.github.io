@@ -16,10 +16,11 @@
   }
 
   h1, h2, h3, h4 {
-    @apply text-ink font-semibold tracking-tight;
+    @apply text-ink font-bold tracking-tight;
   }
 
-  code {
+  /* Only style inline <code> inside prose, not standalone usage */
+  p code, li code {
     @apply font-mono text-sm bg-surface-warm rounded px-1.5 py-0.5 text-ink;
   }
 
@@ -28,7 +29,6 @@
   }
 
   ::selection {
-    background: #d5f2f0;
-    color: #0c2e2d;
+    @apply bg-teal-100 text-teal-900;
   }
 }
