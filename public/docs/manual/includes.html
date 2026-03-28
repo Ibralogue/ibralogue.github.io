@@ -93,7 +93,7 @@
 <p>Included files are loaded using <a href="https://docs.unity3d.com/ScriptReference/Resources.Load.html">Resources.Load</a>, so they must be placed in a <code>Resources</code> folder somewhere in your project. For example, a file at <code>Assets/Dialogue/Resources/SharedChoices.ibra</code> would be referenced as <code>SharedChoices</code>.</p>
 <h4 id="including-an-entire-file">Including an Entire File</h4>
 <p>To include all the content of another dialogue file, use <code>{{Include(...)}}</code> on its own line:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 How are you?
 - Fine -&gt; FineResponse
 - Terrible -&gt; TerribleResponse
@@ -103,7 +103,7 @@ How are you?
 <p>The contents of <code>SharedChoices.ibra</code> are inserted in place of the <code>{{Include(...)}}</code> line, as if you had copied and pasted them.</p>
 <h4 id="including-a-specific-conversation">Including a Specific Conversation</h4>
 <p>If the included file contains multiple conversations and you only need one, pass the conversation name as a second argument:</p>
-<pre><code class="lang-text">{{Include(SharedChoices, FineResponse)}}
+<pre><code class="lang-ibra">{{Include(SharedChoices, FineResponse)}}
 </code></pre>
 <p>This will only pull in the <code>FineResponse</code> conversation block from the file.</p>
 <h4 id="recursive-includes">Recursive Includes</h4>
@@ -111,7 +111,7 @@ How are you?
 <p>Circular includes (where file A includes file B which includes file A) are detected and reported as an error.</p>
 <h4 id="example">Example</h4>
 <p><code>SharedChoices.ibra</code> (in a Resources folder):</p>
-<pre><code class="lang-text">{{ConversationName(FineResponse)}}
+<pre><code class="lang-ibra">{{ConversationName(FineResponse)}}
 [NPC]
 Good to hear!
 
@@ -120,7 +120,7 @@ Good to hear!
 I'm sorry. Hope things get better.
 </code></pre>
 <p><code>main_dialogue.ibra</code>:</p>
-<pre><code class="lang-text">{{ConversationName(Greeting)}}
+<pre><code class="lang-ibra">{{ConversationName(Greeting)}}
 [NPC]
 Hello, traveller. How are you?
 - Fine -&gt; FineResponse

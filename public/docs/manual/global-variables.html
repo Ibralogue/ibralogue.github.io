@@ -92,7 +92,7 @@
 <p>Variables are resolved at <strong>runtime</strong>, meaning changes to variable values are reflected immediately in any dialogue that references them, without reparsing.</p>
 <h4 id="reading-variables-in-dialogue">Reading Variables in Dialogue</h4>
 <p>Reference any variable with the <code>$</code> prefix. Variables work anywhere in dialogue -- text, speaker names, invocation arguments, metadata values, choices, and jump targets.</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Hi, $PLAYERNAME.
 [$PLAYERNAME]
 Hi. What's up?
@@ -105,12 +105,12 @@ VariableStore.SetGlobal(&quot;QUEST_DONE&quot;, false);
 </code></pre>
 <h4 id="setting-variables-from-dialogue">Setting Variables from Dialogue</h4>
 <p>Use <code>{{Set(...)}}</code> to assign a variable from within a dialogue file:</p>
-<pre><code class="lang-text">{{Set($GOLD, 100)}}
+<pre><code class="lang-ibra">{{Set($GOLD, 100)}}
 {{Set($NAME, &quot;Alice&quot;)}}
 {{Set($QUEST_DONE, true)}}
 </code></pre>
 <p>The value can be any expression, including references to other variables and arithmetic:</p>
-<pre><code class="lang-text">{{Set($HEALTH, $HEALTH - 10)}}
+<pre><code class="lang-ibra">{{Set($HEALTH, $HEALTH - 10)}}
 {{Set($TOTAL, $BASE_PRICE * $QUANTITY)}}
 {{Set($GREETING, &quot;Hello &quot; + $PLAYERNAME)}}
 </code></pre>
@@ -118,10 +118,10 @@ VariableStore.SetGlobal(&quot;QUEST_DONE&quot;, false);
 <h4 id="global-vs-local-scope">Global vs Local Scope</h4>
 <p>Variables set from C# are always global. Variables created by <code>{{Set(...)}}</code> in a dialogue file are local by default.</p>
 <p>To explicitly declare a variable as global from within dialogue, use <code>{{Global(...)}}</code>:</p>
-<pre><code class="lang-text">{{Global($PLAYER_SCORE, 0)}}
+<pre><code class="lang-ibra">{{Global($PLAYER_SCORE, 0)}}
 </code></pre>
 <p>This creates (or updates) a global variable that persists across all dialogue files. If only a name is provided, the variable is registered without a value:</p>
-<pre><code class="lang-text">{{Global($PLAYER_SCORE)}}
+<pre><code class="lang-ibra">{{Global($PLAYER_SCORE)}}
 </code></pre>
 <h4 id="resolution-order">Resolution Order</h4>
 <p>When a variable is referenced, Ibralogue checks scopes in this order:</p>
@@ -132,13 +132,13 @@ VariableStore.SetGlobal(&quot;QUEST_DONE&quot;, false);
 <p>The first match wins. This means a local variable can shadow a global variable of the same name.</p>
 <h4 id="variables-in-invocation-arguments">Variables in Invocation Arguments</h4>
 <p>Variables are resolved inside invocation arguments:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 You received {{GiveItem($REWARD)}}.
 The $TARGET takes {{FormatDamage($DMG)}} damage!
 </code></pre>
 <h4 id="variables-in-metadata-and-choices">Variables in Metadata and Choices</h4>
 <p>Variables are also resolved in metadata values and choice text:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 How do you feel? ## emotion:$MOOD
 - Go to $LOCATION -&gt; $LOCATION ## quest:$QUESTID
 </code></pre>

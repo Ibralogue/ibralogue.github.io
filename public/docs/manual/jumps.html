@@ -91,7 +91,7 @@
 <p>The <code>Jump</code> invocation lets you automatically move from one conversation to another without requiring a player choice. When the dialogue line finishes displaying, the engine switches to the target conversation.</p>
 <h4 id="basic-syntax">Basic Syntax</h4>
 <p>Use <code>{{Jump(...)}}</code> on its own line within a dialogue line.</p>
-<pre><code class="lang-text">{{ConversationName(Greeting)}}
+<pre><code class="lang-ibra">{{ConversationName(Greeting)}}
 [NPC]
 {{Jump(Farewell)}}
 Welcome, traveller.
@@ -103,18 +103,18 @@ Safe travels, friend.
 <p>After the player advances past &quot;Welcome, traveller.&quot;, the engine jumps to the &quot;Farewell&quot; conversation automatically.</p>
 <h4 id="placement">Placement</h4>
 <p>The <code>{{Jump(...)}}</code> invocation can appear before or after the sentence text, as long as it is inside a dialogue line (after a <code>[Speaker]</code> tag):</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 {{Jump(NextConversation)}}
 This line will jump after it finishes.
 </code></pre>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 This line will also jump after it finishes.
 {{Jump(NextConversation)}}
 </code></pre>
 <p>Both forms are equivalent. The jump always happens after the player advances past the line.</p>
 <h4 id="variables-in-jump-targets">Variables in Jump Targets</h4>
 <p>Jump targets support <a href="global-variables.html">variables</a>:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 {{Jump($NEXT_CONVERSATION)}}
 Moving on...
 </code></pre>

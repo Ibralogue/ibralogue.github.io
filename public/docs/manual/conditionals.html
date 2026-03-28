@@ -90,7 +90,7 @@
 <h3 id="conditionals">Conditionals</h3>
 <p>Conditionals let you show or hide dialogue lines based on variable state. They are evaluated at runtime as the engine reaches them, so earlier <code>{{Set(...)}}</code> invocations within the same conversation affect later conditions.</p>
 <h4 id="basic-ifelse">Basic If/Else</h4>
-<pre><code class="lang-text">[Doctor]
+<pre><code class="lang-ibra">[Doctor]
 Let me take a look at you.
 {{If($HEALTH &gt; 50)}}
 [Doctor]
@@ -103,7 +103,7 @@ You need medical attention.
 <p>The <code>{{If(...)}}</code> block is followed by its body, an optional <code>{{Else}}</code> branch, and closed with <code>{{EndIf}}</code>.</p>
 <h4 id="elseif">ElseIf</h4>
 <p>For multiple conditions, use <code>{{ElseIf(...)}}</code>:</p>
-<pre><code class="lang-text">{{If($RANK == &quot;gold&quot;)}}
+<pre><code class="lang-ibra">{{If($RANK == &quot;gold&quot;)}}
 [NPC]
 Welcome back, gold member!
 {{ElseIf($RANK == &quot;silver&quot;)}}
@@ -117,7 +117,7 @@ Welcome, visitor.
 <p>Branches are checked in order. The first one whose condition is true is executed. If none match and an <code>{{Else}}</code> branch exists, it runs instead.</p>
 <h4 id="nesting">Nesting</h4>
 <p>Conditional blocks can be nested:</p>
-<pre><code class="lang-text">{{If($QUEST_STARTED)}}
+<pre><code class="lang-ibra">{{If($QUEST_STARTED)}}
   {{If($HAS_KEY)}}
   [Guard]
   Go right ahead.
@@ -131,24 +131,24 @@ Welcome, visitor.
 <h4 id="expressions">Expressions</h4>
 <p>Conditions support comparisons, boolean logic, and arithmetic.</p>
 <p><strong>Comparison operators:</strong> <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></p>
-<pre><code class="lang-text">{{If($GOLD &gt;= 100)}}
+<pre><code class="lang-ibra">{{If($GOLD &gt;= 100)}}
 {{If($NAME != &quot;Nobody&quot;)}}
 </code></pre>
 <p><strong>Boolean operators:</strong> <code>AND</code>, <code>OR</code>, <code>NOT</code></p>
-<pre><code class="lang-text">{{If($HEALTH &gt; 0 AND $MANA &gt; 10)}}
+<pre><code class="lang-ibra">{{If($HEALTH &gt; 0 AND $MANA &gt; 10)}}
 {{If($IS_FRIENDLY OR $REPUTATION &gt; 50)}}
 {{If(NOT $GAME_OVER)}}
 </code></pre>
 <p><strong>Arithmetic:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></p>
 <p>Arithmetic is available in <code>{{Set(...)}}</code> expressions and conditions:</p>
-<pre><code class="lang-text">{{Set($TOTAL, $PRICE * $QTY)}}
+<pre><code class="lang-ibra">{{Set($TOTAL, $PRICE * $QTY)}}
 {{If($HEALTH - $DAMAGE &gt; 0)}}
 </code></pre>
 <p><strong>Parentheses</strong> for grouping:</p>
-<pre><code class="lang-text">{{If(($A OR $B) AND $C)}}
+<pre><code class="lang-ibra">{{If(($A OR $B) AND $C)}}
 </code></pre>
 <p><strong>Function calls:</strong> Any <code>[DialogueInvocation]</code> that returns a value can be called inside expressions:</p>
-<pre><code class="lang-text">{{If(Visited(&quot;Tavern&quot;))}}
+<pre><code class="lang-ibra">{{If(Visited(&quot;Tavern&quot;))}}
 [NPC]
 You've been here before.
 {{EndIf}}
@@ -170,7 +170,7 @@ Welcome back, and I see you can afford the good stuff.
 <p>For truthiness (used by <code>NOT</code> and bare variables in conditions): <code>null</code>, empty string, <code>&quot;false&quot;</code>, <code>&quot;0&quot;</code>, and <code>0</code> are falsy. Everything else is truthy.</p>
 <h4 id="conditionals-with-set">Conditionals with Set</h4>
 <p>Because conditions are evaluated as the engine reaches them, you can use <code>{{Set(...)}}</code> mid-conversation and have later conditions react:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Here, take this key.
 {{Set($HAS_KEY, true)}}
 

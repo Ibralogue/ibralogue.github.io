@@ -91,7 +91,7 @@
 <p>A single <code>.ibra</code> file can contain multiple conversations. Conversations are named blocks of dialogue that can be jumped to by name, which is how branching dialogue works.</p>
 <h4 id="naming-a-conversation">Naming a Conversation</h4>
 <p>Use <code>{{ConversationName(...)}}</code> on its own line to mark the start of a conversation:</p>
-<pre><code class="lang-text">{{ConversationName(Greeting)}}
+<pre><code class="lang-ibra">{{ConversationName(Greeting)}}
 [NPC]
 Hello, traveller.
 [NPC]
@@ -99,7 +99,7 @@ What brings you here?
 </code></pre>
 <p>Everything after the <code>{{ConversationName(...)}}</code> line belongs to that conversation, until the next <code>{{ConversationName(...)}}</code> or the end of the file.</p>
 <h4 id="multiple-conversations">Multiple Conversations</h4>
-<pre><code class="lang-text">{{ConversationName(Greeting)}}
+<pre><code class="lang-ibra">{{ConversationName(Greeting)}}
 [NPC]
 Hello, traveller.
 
@@ -110,7 +110,7 @@ Safe travels, friend.
 <p>This file contains two conversations: &quot;Greeting&quot; and &quot;Farewell&quot;.</p>
 <h4 id="default-conversation">Default Conversation</h4>
 <p>If no <code>{{ConversationName(...)}}</code> is specified, the conversation is named &quot;Default&quot;. This is fine for simple files that only need one conversation:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Hello World!
 </code></pre>
 <h4 id="starting-a-specific-conversation">Starting a Specific Conversation</h4>
@@ -119,7 +119,7 @@ Hello World!
 </code></pre>
 <h4 id="jumping-between-conversations">Jumping Between Conversations</h4>
 <p>You can jump to a conversation by name directly in a dialogue file using the <code>{{Jump(...)}}</code> invocation:</p>
-<pre><code class="lang-text">{{ConversationName(Greeting)}}
+<pre><code class="lang-ibra">{{ConversationName(Greeting)}}
 [NPC]
 {{Jump(Farewell)}}
 Hello, traveller.

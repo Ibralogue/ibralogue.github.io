@@ -166,7 +166,7 @@
 </tr>
 </tbody>
 </table>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 {{Image(Portraits/Happy)}}
 {{Audio(Voiceover/greeting)}}
 Hello there!
@@ -187,7 +187,7 @@ public static void Die()
     Debug.Log(&quot;Dead.&quot;);
 }
 </code></pre>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Time to die.
 {{Die}}
 </code></pre>
@@ -203,7 +203,7 @@ Time to die.
     }
 }
 </code></pre>
-<pre><code class="lang-text">{{If(HasQuest(&quot;FindSword&quot;))}}
+<pre><code class="lang-ibra">{{If(HasQuest(&quot;FindSword&quot;))}}
 [NPC]
 I see you found the sword.
 {{EndIf}}
@@ -216,7 +216,7 @@ public static string GetDay()
     return System.DateTime.Now.DayOfWeek.ToString();
 }
 </code></pre>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Today is {{GetDay}}.
 </code></pre>
 <p>The player sees &quot;Today is Wednesday.&quot; (or whichever day it is).</p>
@@ -236,7 +236,7 @@ public IEnumerator PlayCutscene(string name)
     yield return CutsceneManager.Play(name);
 }
 </code></pre>
-<pre><code class="lang-text">[&gt;&gt;]
+<pre><code class="lang-ibra">[&gt;&gt;]
 {{PlayCutscene(intro)}}
 
 [NPC]
@@ -246,7 +246,7 @@ That was something!
 <p>This is different from <code>{{Wait(seconds)}}</code> which only pauses the text animation for a fixed duration, and from <code>{{PauseEngine}}</code> which halts the engine until <code>ResumeConversation()</code> is called manually. Async invocations express their own duration naturally.</p>
 <h4 id="variables-as-arguments">Variables as Arguments</h4>
 <p><a href="global-variables.html">Variables</a> are resolved inside invocation arguments:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 You received {{GiveItem($REWARD)}}.
 </code></pre>
 <p>If <code>REWARD</code> is <code>&quot;Sword&quot;</code>, <code>GiveItem</code> receives <code>&quot;Sword&quot;</code>.</p>

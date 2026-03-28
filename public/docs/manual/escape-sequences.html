@@ -91,30 +91,30 @@
 <p>Ibralogue uses several characters and character sequences as syntax. To use these literally in dialogue text, prefix them with a backslash (<code>\</code>).</p>
 <h4 id="escaping-inline-syntax">Escaping Inline Syntax</h4>
 <p>Within a dialogue line, <code>{{</code>, <code>$</code>, and <code>##</code> have special meaning. A backslash prevents them from being interpreted as syntax:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 The price is \$50 per item.
 Use \{{curly braces}} for templates.
 See section \## for more info.
 </code></pre>
 <p>This displays as:</p>
-<pre><code class="lang-text">NPC: The price is $50 per item.
+<pre><code class="lang-ibra">NPC: The price is $50 per item.
 NPC: Use {{curly braces}} for templates.
 NPC: See section ## for more info.
 </code></pre>
 <p>Without the backslashes, <code>$50</code> would be treated as a <a href="global-variables.html">variable</a>, <code>{{curly braces}}</code> as an <a href="invocations.html">invocation</a>, and <code>##</code> as <a href="comments.html">metadata</a>.</p>
 <h4 id="escaping-line-start-syntax">Escaping Line-Start Syntax</h4>
 <p>Some syntax is only special at the start of a line: <code>#</code> (comments), <code>##</code> (metadata), <code>[</code> (speaker names), <code>-</code> (choices), and <code>{{</code> (invocations). A backslash at the start of the line prevents this:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 \# This is not a comment.
 \[Not a speaker]
 </code></pre>
 <p>This displays as:</p>
-<pre><code class="lang-text">NPC: # This is not a comment.
+<pre><code class="lang-ibra">NPC: # This is not a comment.
 NPC: [Not a speaker]
 </code></pre>
 <h4 id="literal-backslash">Literal Backslash</h4>
 <p>To include a literal backslash in dialogue text, use a double backslash:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 The file is at C:\\Users\\NPC\\Documents.
 </code></pre>
 

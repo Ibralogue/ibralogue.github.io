@@ -89,12 +89,12 @@
 
 <h3 id="comments">Comments</h3>
 <p><code>#</code> is used to denote comments. Commented lines are ignored by the parser. There are no block comments.</p>
-<pre><code class="lang-text"># Reminder: Need to rephrase this
+<pre><code class="lang-ibra"># Reminder: Need to rephrase this
 [NPC]
 Time to die.
 </code></pre>
 <p>Comments can also appear between dialogue lines:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Hello there.
 # The next line is intentionally dramatic
 [NPC]
@@ -102,7 +102,7 @@ We need to talk.
 </code></pre>
 <h3 id="metadata">Metadata</h3>
 <p>A double-hashtag <code>##</code> denotes metadata. Metadata is attached to the dialogue line it appears on and can be accessed from code.</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Nice to meet you! ## greeting
 </code></pre>
 <p>You can check for metadata on a line like so:</p>
@@ -113,12 +113,12 @@ Nice to meet you! ## greeting
 </code></pre>
 <h4 id="multiple-metadata-tags">Multiple Metadata Tags</h4>
 <p>One line can carry more than one piece of metadata, separated by spaces:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 This is a sentence with a lot of metadata. ## cool funny epic sad
 </code></pre>
 <h4 id="key-value-metadata">Key-Value Metadata</h4>
 <p>Metadata can also carry key-value pairs, separated by a colon:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Today is a sad day. ## emotion:sad
 </code></pre>
 <pre><code class="lang-cs">if (dialogueManager.ParsedConversations[0].Lines[0].TryGetMetadata(&quot;emotion&quot;, out string value))

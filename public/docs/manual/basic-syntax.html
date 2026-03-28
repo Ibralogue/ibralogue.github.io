@@ -90,14 +90,14 @@
 <h2 id="basic-syntax">Basic Syntax</h2>
 <h3 id="speakers">Speakers</h3>
 <p>Use square brackets to define speaker names. Everything that follows belongs to that speaker until the next speaker tag is reached.</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Hi!
 How are you?
 </code></pre>
 <p>In the example above, &quot;Hi!&quot; and &quot;How are you?&quot; are both part of the same dialogue line. They will be displayed together, joined by a newline.</p>
 <h3 id="separate-dialogue-lines">Separate Dialogue Lines</h3>
 <p>To split text into separate dialogue lines that the player advances through one at a time, use the speaker tag again:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Hi!
 [NPC]
 How are you?
@@ -105,7 +105,7 @@ How are you?
 <p>Now &quot;Hi!&quot; and &quot;How are you?&quot; are two separate lines. The player will see &quot;Hi!&quot; first, and then &quot;How are you?&quot; after advancing.</p>
 <h3 id="multiple-speakers">Multiple Speakers</h3>
 <p>Different speakers are defined the same way:</p>
-<pre><code class="lang-text">[Ava]
+<pre><code class="lang-ibra">[Ava]
 Hey there!
 [Claire]
 Oh, hey Ava.
@@ -114,7 +114,7 @@ How have you been?
 </code></pre>
 <h3 id="silent-lines">Silent Lines</h3>
 <p>Use <code>[&gt;&gt;]</code> as the speaker to create a line that runs functions without displaying anything in the dialogue view:</p>
-<pre><code class="lang-text">[NPC]
+<pre><code class="lang-ibra">[NPC]
 Let me check something...
 [&gt;&gt;]
 {{RunCheck}}
