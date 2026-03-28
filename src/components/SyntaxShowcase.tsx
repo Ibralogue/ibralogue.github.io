@@ -6,6 +6,7 @@ interface Tab {
   label: string
   filename: string
   description: string
+  docsUrl: string
   source: string
 }
 
@@ -14,6 +15,7 @@ const TABS: Tab[] = [
     label: 'Speakers',
     filename: 'tavern.ibra',
     description: 'Define speakers with square brackets. Each tag starts a new dialogue line the player advances through.',
+    docsUrl: URLS.manual.basicSyntax,
     source: `[Ava]
 Hey there!
 [Claire]
@@ -25,6 +27,7 @@ How have you been?`,
     label: 'Choices',
     filename: 'quest.ibra',
     description: 'Branch dialogue with choices. Players pick an option and jump to the target conversation.',
+    docsUrl: URLS.manual.choices,
     source: `{{ConversationName(Initial)}}
 [NPC]
 How are you doing today?
@@ -43,6 +46,7 @@ I'm sorry to hear that.`,
     label: 'Invocations',
     filename: 'cutscene.ibra',
     description: 'Call game functions from dialogue. Control portraits, audio, timing, and custom C# methods.',
+    docsUrl: URLS.manual.invocations,
     source: `[NPC]
 {{Image(Portraits/Happy)}}
 {{Audio(Voiceover/greeting)}}
@@ -59,6 +63,7 @@ And the winner is... {{Wait(2)}} you!
     label: 'Conditionals',
     filename: 'shop.ibra',
     description: 'Use variables and conditionals to change dialogue based on game state at runtime.',
+    docsUrl: URLS.manual.conditionals,
     source: `{{Set($GOLD, 100)}}
 
 {{If($GOLD >= 50)}}
@@ -126,12 +131,12 @@ export default function SyntaxShowcase() {
             <h3 className="text-sm font-semibold text-ink mb-2">{tab.label}</h3>
             <p className="text-sm text-ink-muted leading-relaxed">{tab.description}</p>
             <a
-              href={URLS.syntaxDocs}
+              href={tab.docsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-teal-500 hover:text-teal-600 focus-visible:outline-none focus-visible:underline transition-colors mt-4"
             >
-              Read the docs
+              Read more
               <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 4l4 4-4 4" />
               </svg>
