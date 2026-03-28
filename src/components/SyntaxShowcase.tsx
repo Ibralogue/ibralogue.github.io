@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { highlightIbra } from '../lib/highlightIbra'
 import { URLS } from '../constants'
+import PanelHeader from './PanelHeader'
 
 interface Tab {
   label: string
@@ -115,15 +116,11 @@ export default function SyntaxShowcase() {
 
         <div className="grid md:grid-cols-[1fr,280px]">
           {/* Code panel */}
-          <div className="bg-surface-warm p-5 font-mono text-[13px] text-ink-muted min-h-[220px] border-b md:border-b-0 md:border-r border-surface-dim">
-            <div className="flex items-center gap-1.5 mb-3 text-[11px] text-ink-faint tracking-wide">
-              <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth={1.2} aria-hidden="true">
-                <rect x="2" y="1" width="12" height="14" rx="1.5" />
-                <path d="M5 4.5h6M5 7h4" />
-              </svg>
-              {tab.filename}
+          <div className="border-b md:border-b-0 md:border-r border-surface-dim">
+            <PanelHeader filename={tab.filename} />
+            <div className="bg-surface-warm p-5 font-mono text-[13px] text-ink-muted min-h-[220px]">
+              {highlightIbra(tab.source)}
             </div>
-            {highlightIbra(tab.source)}
           </div>
 
           {/* Description panel */}
