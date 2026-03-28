@@ -1,29 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Variables | Ibralogue Docs </title>
+    <title> | Ibralogue Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Variables | Ibralogue Docs ">
-    <meta name="generator" content="docfx 2.56.7.0">
-    
+    <meta name="title" content=" | Ibralogue Docs ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -47,7 +50,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,17 +60,17 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -77,8 +80,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h3 id="variables">Variables</h3>
 
+<h3 id="variables">Variables</h3>
 <p>Ibralogue has a flexible variable system with two scopes: <strong>global</strong> variables that persist across all dialogue files, and <strong>local</strong> variables scoped to a single file.</p>
 <p>Variables are resolved at <strong>runtime</strong>, meaning changes to variable values are reflected immediately in any dialogue that references them, without reparsing.</p>
 <h4 id="reading-variables-in-dialogue">Reading Variables in Dialogue</h4>
@@ -86,29 +89,35 @@
 <pre><code class="lang-text">[NPC]
 Hi, $PLAYERNAME.
 [$PLAYERNAME]
-Hi. What&#39;s up?
-</code></pre><h4 id="setting-variables-from-code">Setting Variables from Code</h4>
+Hi. What's up?
+</code></pre>
+<h4 id="setting-variables-from-code">Setting Variables from Code</h4>
 <p>Register global variables through the <code>VariableStore</code>:</p>
 <pre><code class="lang-cs">VariableStore.SetGlobal(&quot;PLAYERNAME&quot;, &quot;Ibrahim&quot;);
 VariableStore.SetGlobal(&quot;HEALTH&quot;, 100.0);
 VariableStore.SetGlobal(&quot;QUEST_DONE&quot;, false);
-</code></pre><h4 id="setting-variables-from-dialogue">Setting Variables from Dialogue</h4>
+</code></pre>
+<h4 id="setting-variables-from-dialogue">Setting Variables from Dialogue</h4>
 <p>Use <code>{{Set(...)}}</code> to assign a variable from within a dialogue file:</p>
 <pre><code class="lang-text">{{Set($GOLD, 100)}}
 {{Set($NAME, &quot;Alice&quot;)}}
 {{Set($QUEST_DONE, true)}}
-</code></pre><p>The value can be any expression, including references to other variables and arithmetic:</p>
+</code></pre>
+<p>The value can be any expression, including references to other variables and arithmetic:</p>
 <pre><code class="lang-text">{{Set($HEALTH, $HEALTH - 10)}}
 {{Set($TOTAL, $BASE_PRICE * $QUANTITY)}}
 {{Set($GREETING, &quot;Hello &quot; + $PLAYERNAME)}}
-</code></pre><p>If the variable already exists in any scope, <code>{{Set(...)}}</code> updates it in place. If it does not exist, a new <strong>local</strong> variable is created, scoped to the current dialogue file.</p>
+</code></pre>
+<p>If the variable already exists in any scope, <code>{{Set(...)}}</code> updates it in place. If it does not exist, a new <strong>local</strong> variable is created, scoped to the current dialogue file.</p>
 <h4 id="global-vs-local-scope">Global vs Local Scope</h4>
 <p>Variables set from C# are always global. Variables created by <code>{{Set(...)}}</code> in a dialogue file are local by default.</p>
 <p>To explicitly declare a variable as global from within dialogue, use <code>{{Global(...)}}</code>:</p>
 <pre><code class="lang-text">{{Global($PLAYER_SCORE, 0)}}
-</code></pre><p>This creates (or updates) a global variable that persists across all dialogue files. If only a name is provided, the variable is registered without a value:</p>
+</code></pre>
+<p>This creates (or updates) a global variable that persists across all dialogue files. If only a name is provided, the variable is registered without a value:</p>
 <pre><code class="lang-text">{{Global($PLAYER_SCORE)}}
-</code></pre><h4 id="resolution-order">Resolution Order</h4>
+</code></pre>
+<h4 id="resolution-order">Resolution Order</h4>
 <p>When a variable is referenced, Ibralogue checks scopes in this order:</p>
 <ol>
 <li><strong>Local</strong> (current dialogue file)</li>
@@ -120,12 +129,14 @@ VariableStore.SetGlobal(&quot;QUEST_DONE&quot;, false);
 <pre><code class="lang-text">[NPC]
 You received {{GiveItem($REWARD)}}.
 The $TARGET takes {{FormatDamage($DMG)}} damage!
-</code></pre><h4 id="variables-in-metadata-and-choices">Variables in Metadata and Choices</h4>
+</code></pre>
+<h4 id="variables-in-metadata-and-choices">Variables in Metadata and Choices</h4>
 <p>Variables are also resolved in metadata values and choice text:</p>
 <pre><code class="lang-text">[NPC]
 How do you feel? ## emotion:$MOOD
 - Go to $LOCATION -&gt; $LOCATION ## quest:$QUESTID
-</code></pre><h4 id="managing-variables-from-code">Managing Variables from Code</h4>
+</code></pre>
+<h4 id="managing-variables-from-code">Managing Variables from Code</h4>
 <p>The <code>VariableStore</code> API provides full control:</p>
 <pre><code class="lang-cs">// Set a global variable
 VariableStore.SetGlobal(&quot;SCORE&quot;, 100.0);
@@ -141,13 +152,15 @@ VariableStore.ClearLocals(&quot;myDialogue&quot;);
 
 // Clear all variables
 VariableStore.ClearAll();
-</code></pre><h4 id="reacting-to-variable-changes">Reacting to Variable Changes</h4>
+</code></pre>
+<h4 id="reacting-to-variable-changes">Reacting to Variable Changes</h4>
 <p>The <code>OnVariableChanged</code> event fires whenever a variable is set from any source (code or dialogue). The callback receives the variable name, old value, and new value:</p>
 <pre><code class="lang-cs">VariableStore.OnVariableChanged += (name, oldValue, newValue) =&gt;
 {
     Debug.Log($&quot;{name} changed from {oldValue} to {newValue}&quot;);
 };
-</code></pre><p>This is useful for reactive UI, quest state tracking, or achievement systems.</p>
+</code></pre>
+<p>This is useful for reactive UI, quest state tracking, or achievement systems.</p>
 <h4 id="saving-and-loading-variable-state">Saving and Loading Variable State</h4>
 <p>The <code>VariableStore</code> supports exporting and importing its entire state for save/load systems:</p>
 <pre><code class="lang-cs">// Save
@@ -157,30 +170,32 @@ string json = JsonUtility.ToJson(snapshot);
 // Load
 VariableSnapshot loaded = JsonUtility.FromJson&lt;VariableSnapshot&gt;(json);
 VariableStore.ImportState(loaded);
-</code></pre><p><code>ImportState</code> clears all existing variables before restoring the snapshot.</p>
+</code></pre>
+<p><code>ImportState</code> clears all existing variables before restoring the snapshot.</p>
 <h4 id="missing-variables">Missing Variables</h4>
 <p>If a variable is referenced but has no entry in any scope, the <code>$VARIABLE</code> text is left as-is.</p>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/global-variables.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/global-variables.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -188,14 +203,14 @@ VariableStore.ImportState(loaded);
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Ibralogue Docs
-            
+      Ibralogue Docs
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

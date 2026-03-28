@@ -1,29 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Rich Text | Ibralogue Docs </title>
+    <title> | Ibralogue Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Rich Text | Ibralogue Docs ">
-    <meta name="generator" content="docfx 2.56.7.0">
-    
+    <meta name="title" content=" | Ibralogue Docs ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -47,7 +50,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,17 +60,17 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -77,15 +80,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h3 id="rich-text">Rich Text</h3>
 
+<h3 id="rich-text">Rich Text</h3>
 <p>Ibralogue supports TextMeshPro rich text tags in dialogue text. Tags are passed through to the TMP component as-is, so any tag that TextMeshPro supports will work.</p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-text">[NPC]
-Why don&#39;t we go &lt;color=yellow&gt;fishing&lt;/color&gt;?
+Why don't we go &lt;color=yellow&gt;fishing&lt;/color&gt;?
 [NPC]
 That sounds &lt;b&gt;great&lt;/b&gt;!
-</code></pre><p>The word &quot;fishing&quot; will appear in yellow, and &quot;great&quot; will appear in bold.</p>
+</code></pre>
+<p>The word &quot;fishing&quot; will appear in yellow, and &quot;great&quot; will appear in bold.</p>
 <h4 id="common-tags">Common Tags</h4>
 <table>
 <thead>
@@ -123,28 +127,29 @@ That sounds &lt;b&gt;great&lt;/b&gt;!
 </table>
 <p>For a full list of supported tags, see the <a href="https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/RichText.html/">TextMeshPro documentation</a>.</p>
 <h4 id="interaction-with-views">Interaction with Views</h4>
-<p>Rich text works with all built-in views. The TypewriterDialogueView and PunchDialogueView both use TMP&#39;s <code>maxVisibleCharacters</code> for their reveal effects, which means tags are applied correctly even while text is being revealed. A partially revealed <code>&lt;color=red&gt;</code> word will still appear red.</p>
+<p>Rich text works with all built-in views. The TypewriterDialogueView and PunchDialogueView both use TMP's <code>maxVisibleCharacters</code> for their reveal effects, which means tags are applied correctly even while text is being revealed. A partially revealed <code>&lt;color=red&gt;</code> word will still appear red.</p>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/rich-text.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/rich-text.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -152,14 +157,14 @@ That sounds &lt;b&gt;great&lt;/b&gt;!
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Ibralogue Docs
-            
+      Ibralogue Docs
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

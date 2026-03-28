@@ -9,8 +9,7 @@
     "baseUrl": "https://ibralogue.github.io/docs/",
     "changefreq": "weekly"
   },
-  "homepages": [],
-  "source_base_path": "/github/workspace/Documentation~",
+  "source_base_path": "/home/runner/work/Ibralogue/Ibralogue/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -19,8 +18,7 @@
         "resource": {
           "relative_path": "index.json"
         }
-      },
-      "is_incremental": false
+      }
     },
     {
       "type": "Resource",
@@ -30,7 +28,6 @@
           "relative_path": "favicon.ico"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -38,11 +35,9 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "85FV80vtqtDF+upqLxonmQ=="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -53,7 +48,6 @@
           "relative_path": "logo.svg"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -61,11 +55,9 @@
       "source_relative_path": "manual/basic-syntax.md",
       "output": {
         ".html": {
-          "relative_path": "manual/basic-syntax.html",
-          "hash": "gXtHF+poJxs/6arUhpTsiA=="
+          "relative_path": "manual/basic-syntax.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -73,11 +65,9 @@
       "source_relative_path": "manual/choices.md",
       "output": {
         ".html": {
-          "relative_path": "manual/choices.html",
-          "hash": "O+Bvix3t1APzyrOCIPD29g=="
+          "relative_path": "manual/choices.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -85,11 +75,9 @@
       "source_relative_path": "manual/comments.md",
       "output": {
         ".html": {
-          "relative_path": "manual/comments.html",
-          "hash": "ZoqEUBh1C+IffX34JmUZEQ=="
+          "relative_path": "manual/comments.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -97,11 +85,9 @@
       "source_relative_path": "manual/conditionals.md",
       "output": {
         ".html": {
-          "relative_path": "manual/conditionals.html",
-          "hash": "wrPh0K7785eJmqhFr6ZkZA=="
+          "relative_path": "manual/conditionals.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -109,11 +95,9 @@
       "source_relative_path": "manual/conversations.md",
       "output": {
         ".html": {
-          "relative_path": "manual/conversations.html",
-          "hash": "co8QMvgVZtIyC5413vgE4w=="
+          "relative_path": "manual/conversations.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -121,11 +105,9 @@
       "source_relative_path": "manual/dialogue-views.md",
       "output": {
         ".html": {
-          "relative_path": "manual/dialogue-views.html",
-          "hash": "M3ppaMllxl4omzaAYeE62g=="
+          "relative_path": "manual/dialogue-views.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -133,11 +115,9 @@
       "source_relative_path": "manual/engine-plugins.md",
       "output": {
         ".html": {
-          "relative_path": "manual/engine-plugins.html",
-          "hash": "iOaQiihWapx8x1jE7eCMag=="
+          "relative_path": "manual/engine-plugins.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -145,11 +125,9 @@
       "source_relative_path": "manual/escape-sequences.md",
       "output": {
         ".html": {
-          "relative_path": "manual/escape-sequences.html",
-          "hash": "I3V9ss+UkSl7bY5cB8QqNA=="
+          "relative_path": "manual/escape-sequences.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -157,11 +135,9 @@
       "source_relative_path": "manual/events.md",
       "output": {
         ".html": {
-          "relative_path": "manual/events.html",
-          "hash": "cc3eqaedez2U7nntyjxG5Q=="
+          "relative_path": "manual/events.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -169,11 +145,9 @@
       "source_relative_path": "manual/global-variables.md",
       "output": {
         ".html": {
-          "relative_path": "manual/global-variables.html",
-          "hash": "6K+AuIuBwa8tsjkPFXJncQ=="
+          "relative_path": "manual/global-variables.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -181,11 +155,9 @@
       "source_relative_path": "manual/includes.md",
       "output": {
         ".html": {
-          "relative_path": "manual/includes.html",
-          "hash": "EfZolDXqBoe2W7uh3kmwZw=="
+          "relative_path": "manual/includes.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -193,11 +165,9 @@
       "source_relative_path": "manual/interactions.md",
       "output": {
         ".html": {
-          "relative_path": "manual/interactions.html",
-          "hash": "iaXaKasZeqxU4xI9HF2KVw=="
+          "relative_path": "manual/interactions.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -205,11 +175,9 @@
       "source_relative_path": "manual/invocations.md",
       "output": {
         ".html": {
-          "relative_path": "manual/invocations.html",
-          "hash": "vADFr8H8nHyk2fdJe2Tk/A=="
+          "relative_path": "manual/invocations.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -217,11 +185,9 @@
       "source_relative_path": "manual/jumps.md",
       "output": {
         ".html": {
-          "relative_path": "manual/jumps.html",
-          "hash": "/sGZPjDjINiUI7xFCjtD6g=="
+          "relative_path": "manual/jumps.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -229,11 +195,9 @@
       "source_relative_path": "manual/localization.md",
       "output": {
         ".html": {
-          "relative_path": "manual/localization.html",
-          "hash": "N4mzToQMsx1RYtXGZvqeAA=="
+          "relative_path": "manual/localization.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -241,11 +205,9 @@
       "source_relative_path": "manual/pause-and-resume.md",
       "output": {
         ".html": {
-          "relative_path": "manual/pause-and-resume.html",
-          "hash": "WzJu1tdOLSf6uMsYhlGEuQ=="
+          "relative_path": "manual/pause-and-resume.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -253,11 +215,9 @@
       "source_relative_path": "manual/project-settings.md",
       "output": {
         ".html": {
-          "relative_path": "manual/project-settings.html",
-          "hash": "l2C5qJ6dOd9x2Z0h1WwPaA=="
+          "relative_path": "manual/project-settings.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -265,11 +225,9 @@
       "source_relative_path": "manual/quickstart.md",
       "output": {
         ".html": {
-          "relative_path": "manual/quickstart.html",
-          "hash": "fzSrosz1ptggbfxRLDZlGg=="
+          "relative_path": "manual/quickstart.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -277,11 +235,9 @@
       "source_relative_path": "manual/rich-text.md",
       "output": {
         ".html": {
-          "relative_path": "manual/rich-text.html",
-          "hash": "m20eXexl3XfvPCFhJhuVKA=="
+          "relative_path": "manual/rich-text.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -289,11 +245,9 @@
       "source_relative_path": "manual/save-and-load.md",
       "output": {
         ".html": {
-          "relative_path": "manual/save-and-load.html",
-          "hash": "IuvR+Mvz19DupEDgNSposA=="
+          "relative_path": "manual/save-and-load.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -301,11 +255,12 @@
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "manual/toc.html",
-          "hash": "QwSnQOAr68Dgg/RyLYGTqg=="
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -313,671 +268,782 @@
       "source_relative_path": "ref/Ibralogue.ChoiceEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.ChoiceEvent.html",
-          "hash": "hsKurFVTEPw1Hz+wRMAkvA=="
+          "relative_path": "ref/Ibralogue.ChoiceEvent.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.ChoiceEvent",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.ChoiceEvent.yml\" sourcestartlinenumber=\"1\">Serializable UnityEvent that passes a single <xref href=\"Ibralogue.Parser.Choice\" data-throw-if-not-resolved=\"false\"></xref> to listeners.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.ChoiceListEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.ChoiceListEvent.html",
-          "hash": "EMLKicEnsnxO+0M+oO/rtA=="
+          "relative_path": "ref/Ibralogue.ChoiceListEvent.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.ChoiceListEvent",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.ChoiceListEvent.yml\" sourcestartlinenumber=\"1\">Serializable UnityEvent that passes a list of <xref href=\"Ibralogue.Parser.Choice\" data-throw-if-not-resolved=\"false\"></xref> to listeners.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.ConversationProgress.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.ConversationProgress.html",
-          "hash": "DehhIOi50rbCKCn/1Pa6vw=="
+          "relative_path": "ref/Ibralogue.ConversationProgress.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.ConversationProgress",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.ConversationProgress.yml\" sourcestartlinenumber=\"1\">A serializable snapshot of the engine's position within a conversation.\nUse with <xref href=\"Ibralogue.DialogueEngineBase.ExportProgress\" data-throw-if-not-resolved=\"false\"></xref> and\n<xref href=\"Ibralogue.DialogueEngineBase.ResumeFromProgress(Ibralogue.Parser.DialogueAsset%2cIbralogue.ConversationProgress)\" data-throw-if-not-resolved=\"false\"></xref> to save and restore\nmid-conversation state.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DiagnosticStrictness.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DiagnosticStrictness.html",
-          "hash": "WhIqxudKRMZtPrwIjz8y/A=="
+          "relative_path": "ref/Ibralogue.DiagnosticStrictness.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DiagnosticStrictness",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DialogueEngineBase.CachedInvocation.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DialogueEngineBase.CachedInvocation.html",
-          "hash": "OdbGjBf2S8TkBJb/DnaXzw=="
+          "relative_path": "ref/Ibralogue.DialogueEngineBase.CachedInvocation.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DialogueEngineBase.CachedInvocation",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.DialogueEngineBase.CachedInvocation.yml\" sourcestartlinenumber=\"1\">Pairs a method with its invocation target. Target is null for static methods.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DialogueEngineBase.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DialogueEngineBase.html",
-          "hash": "NkId+9m/RZJ3/wBmpz3jog=="
+          "relative_path": "ref/Ibralogue.DialogueEngineBase.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DialogueEngineBase",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DialogueInvocationAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DialogueInvocationAttribute.html",
-          "hash": "X+f5HrAdAPiz7It6HV8BxQ=="
+          "relative_path": "ref/Ibralogue.DialogueInvocationAttribute.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DialogueInvocationAttribute",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.DialogueInvocationAttribute.yml\" sourcestartlinenumber=\"1\">Marks a static method as a custom invocation that can be called from dialogue files.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DialogueLogger.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DialogueLogger.html",
-          "hash": "gGT1pFm7vimoOADgH87AYg=="
+          "relative_path": "ref/Ibralogue.DialogueLogger.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DialogueLogger",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.DialogueStandardLibrary.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.DialogueStandardLibrary.html",
-          "hash": "I512dT+3gNHtyj7G9wzazQ=="
+          "relative_path": "ref/Ibralogue.DialogueStandardLibrary.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.DialogueStandardLibrary",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.DialogueStandardLibrary.yml\" sourcestartlinenumber=\"1\">Standard invocations that ship with Ibralogue.\nThese follow the same {{Name(args)}} syntax as the rest of the language\nand can be used inline in dialogue text.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.CreateIbralogue.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.CreateIbralogue.html",
-          "hash": "yDhB7O6B47QV5O06ongGKA=="
+          "relative_path": "ref/Ibralogue.Editor.CreateIbralogue.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.CreateIbralogue",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.IbralogueDebugWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.IbralogueDebugWindow.html",
-          "hash": "3Yrvq4uJnSEC1iKwBkLQyw=="
+          "relative_path": "ref/Ibralogue.Editor.IbralogueDebugWindow.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.IbralogueDebugWindow",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Editor.IbralogueDebugWindow.yml\" sourcestartlinenumber=\"1\">Editor window that displays live VariableStore and VisitTracker state\nduring play mode. Open via Window &gt; Ibralogue &gt; Debug Inspector.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.IbralogueImporter.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.IbralogueImporter.html",
-          "hash": "fN7TctAdZlxV+CTETOkCGg=="
+          "relative_path": "ref/Ibralogue.Editor.IbralogueImporter.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.IbralogueImporter",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.IbralogueImporterEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.IbralogueImporterEditor.html",
-          "hash": "vS9EH3Zr9n9irTZhn0AySQ=="
+          "relative_path": "ref/Ibralogue.Editor.IbralogueImporterEditor.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.IbralogueImporterEditor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.IbralogueSettingsProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.IbralogueSettingsProvider.html",
-          "hash": "KRQcJxu373s/XXWISQZC3A=="
+          "relative_path": "ref/Ibralogue.Editor.IbralogueSettingsProvider.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.IbralogueSettingsProvider",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Editor.IbralogueSettingsProvider.yml\" sourcestartlinenumber=\"1\">Surfaces <xref href=\"Ibralogue.IbralogueSettings\" data-throw-if-not-resolved=\"false\"></xref> under Edit &gt; Project Settings &gt; Ibralogue.\nAuto-creates the settings asset in Resources if it does not exist.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.LocalizationExporter.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.LocalizationExporter.html",
-          "hash": "AQDCU6ySFx4mO5H9PvkdBA=="
+          "relative_path": "ref/Ibralogue.Editor.LocalizationExporter.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor.LocalizationExporter",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Editor.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Editor.html",
-          "hash": "Zi9kiH46hp+KzvLnqaxRng=="
+          "relative_path": "ref/Ibralogue.Editor.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Editor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.IAudioProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.IAudioProvider.html",
-          "hash": "wXLyYVPt1xCBaX2w/g46lA=="
+          "relative_path": "ref/Ibralogue.IAudioProvider.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.IAudioProvider",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.IAudioProvider.yml\" sourcestartlinenumber=\"1\">Provides audio playback for dialogue lines. Implement this interface to\nintegrate Ibralogue with any audio backend (Unity AudioSource, FMOD, Wwise, etc.).</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.IbralogueSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.IbralogueSettings.html",
-          "hash": "DO5XyX/+ddzjE4gfF3sReA=="
+          "relative_path": "ref/Ibralogue.IbralogueSettings.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.IbralogueSettings",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.IbralogueSettings.yml\" sourcestartlinenumber=\"1\">Project-wide settings for Ibralogue. Create via\n<b>Edit &gt; Project Settings &gt; Ibralogue</b> or place an instance\nat <code>Assets/Resources/IbralogueSettings.asset</code>.\nThese settings apply across the entire project, regardless of how many\ndialogue engines exist in your scenes.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Interactions.BaseInteraction.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Interactions.BaseInteraction.html",
-          "hash": "A6GKu2zyB7TEGsLoVMChIw=="
+          "relative_path": "ref/Ibralogue.Interactions.BaseInteraction.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Interactions.BaseInteraction",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Interactions.BaseInteraction.yml\" sourcestartlinenumber=\"1\">The base class that is inherited over by other interactions. This class is not meant to directly be added to a GameObject.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Interactions.CircularInteraction.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Interactions.CircularInteraction.html",
-          "hash": "Zplp9PV0Tcip0MQD99ju1w=="
+          "relative_path": "ref/Ibralogue.Interactions.CircularInteraction.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Interactions.CircularInteraction",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Interactions.CircularInteraction.yml\" sourcestartlinenumber=\"1\">Loops through each dialogue one by one.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Interactions.RandomInteraction.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Interactions.RandomInteraction.html",
-          "hash": "9hpvl/EDQTGhhTwOFplTdA=="
+          "relative_path": "ref/Ibralogue.Interactions.RandomInteraction.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Interactions.RandomInteraction",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Interactions.RandomInteraction.yml\" sourcestartlinenumber=\"1\">Plays a random dialogue from within the interaction dialogue array.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Interactions.SingleInteraction.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Interactions.SingleInteraction.html",
-          "hash": "qqXlelKmfFJ37VEQmoa2CQ=="
+          "relative_path": "ref/Ibralogue.Interactions.SingleInteraction.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Interactions.SingleInteraction",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Interactions.SingleInteraction.yml\" sourcestartlinenumber=\"1\">Place the first conversation of a Dialogue file.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Interactions.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Interactions.html",
-          "hash": "rD6X72Pzoeqzpm9Vl/3GhA=="
+          "relative_path": "ref/Ibralogue.Interactions.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Interactions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.LineEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.LineEvent.html",
-          "hash": "0gMHTjGPdnR2Uk76jWGKUA=="
+          "relative_path": "ref/Ibralogue.LineEvent.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.LineEvent",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.LineEvent.yml\" sourcestartlinenumber=\"1\">Serializable UnityEvent that passes a <xref href=\"Ibralogue.Parser.Line\" data-throw-if-not-resolved=\"false\"></xref> to listeners.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Localization.CsvLocalizationProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Localization.CsvLocalizationProvider.html",
-          "hash": "XkC6rmVpyyZCZZ92ida62w=="
+          "relative_path": "ref/Ibralogue.Localization.CsvLocalizationProvider.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Localization.CsvLocalizationProvider",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Localization.CsvLocalizationProvider.yml\" sourcestartlinenumber=\"1\">Built-in localization provider that loads translations from CSV files.\nCSV files follow the format: key,text (RFC 4180 quoting supported).\nPlace translation files in a Resources folder using the naming convention\n{AssetName}.{locale} (e.g. MyDialogue.fr, MyDialogue.ja).</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Localization.ILocalizationProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Localization.ILocalizationProvider.html",
-          "hash": "Lm/w5FvOzbGCZsisbDEuUA=="
+          "relative_path": "ref/Ibralogue.Localization.ILocalizationProvider.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Localization.ILocalizationProvider",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Localization.ILocalizationProvider.yml\" sourcestartlinenumber=\"1\">Provides translated strings for dialogue localization.\nImplement this interface to integrate Ibralogue with any localization backend.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Localization.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Localization.html",
-          "hash": "bIRTefpcRnh/7IHQ2Ya56Q=="
+          "relative_path": "ref/Ibralogue.Localization.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Localization",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.LogLevel.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.LogLevel.html",
-          "hash": "fsb3mdLrxe0WhU48dlHtwQ=="
+          "relative_path": "ref/Ibralogue.LogLevel.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.LogLevel",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.Choice.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.Choice.html",
-          "hash": "Ogg4tI861L581Q6xPNdl+A=="
+          "relative_path": "ref/Ibralogue.Parser.Choice.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.Choice",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Choice.yml\" sourcestartlinenumber=\"1\">The choice class defines an option that can lead to a conversation.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.Conversation.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.Conversation.html",
-          "hash": "JsEJt+UCnBBbycOcWIC1ag=="
+          "relative_path": "ref/Ibralogue.Parser.Conversation.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.Conversation",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Conversation.yml\" sourcestartlinenumber=\"1\">A named block of dialogue content that the engine walks at runtime.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.DialogueAsset.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.DialogueAsset.html",
-          "hash": "oFoo/FdECODHv/9Q2FSJGA=="
+          "relative_path": "ref/Ibralogue.Parser.DialogueAsset.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.DialogueAsset",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.DialogueAsset.yml\" sourcestartlinenumber=\"1\">Scriptable object that stores the context of the entire dialogue file inside it.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.DialogueParser.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.DialogueParser.html",
-          "hash": "zusyBD4yPfa+PHS3yi7YsA=="
+          "relative_path": "ref/Ibralogue.Parser.DialogueParser.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.DialogueParser",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.DialogueParser.yml\" sourcestartlinenumber=\"1\">The main entry point for parsing Ibralogue dialogue files.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.IMetadata.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.IMetadata.html",
-          "hash": "lR/BveYfKLmeDbjlh8QjsQ=="
+          "relative_path": "ref/Ibralogue.Parser.IMetadata.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.IMetadata",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.Invocation.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.Invocation.html",
-          "hash": "ZGLndMV5956D5YPVBtrzWw=="
+          "relative_path": "ref/Ibralogue.Parser.Invocation.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.Invocation",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Invocation.yml\" sourcestartlinenumber=\"1\">An invocation embedded in a dialogue line, retaining source location for diagnostics.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.Line.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.Line.html",
-          "hash": "tSbSLtxGbDsZ3P39RVudDQ=="
+          "relative_path": "ref/Ibralogue.Parser.Line.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.Line",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Line.yml\" sourcestartlinenumber=\"1\">The Line struct contains information about an individual line of dialogue.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.LineContent.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.LineContent.html",
-          "hash": "c7XCxS2d0cLwiD/iNpOCKw=="
+          "relative_path": "ref/Ibralogue.Parser.LineContent.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser.LineContent",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.LineContent.yml\" sourcestartlinenumber=\"1\">The internal contents of a line, including but not limited its text and metadata.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Parser.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Parser.html",
-          "hash": "vaptRAZ+kqP44MgM/17wCQ=="
+          "relative_path": "ref/Ibralogue.Parser.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Parser",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Plugins.AudioLinePlugin.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Plugins.AudioLinePlugin.html",
-          "hash": "/k80MxnOz7cIhv1s9jALXw=="
+          "relative_path": "ref/Ibralogue.Plugins.AudioLinePlugin.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Plugins.AudioLinePlugin",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Plugins.AudioLinePlugin.yml\" sourcestartlinenumber=\"1\">Automatically plays audio when a dialogue line has an <code>audio</code> metadata\nkey. The clip ID from the metadata is passed to the engine's\n<xref href=\"Ibralogue.IAudioProvider\" data-throw-if-not-resolved=\"false\"></xref>. Stops playback when the view is cleared.</p>\n<pre><code class=\"lang-csharp\">[NPC] ## audio:vo_npc_greeting\nHello there, traveler.</code></pre>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Plugins.EnginePlugin.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Plugins.EnginePlugin.html",
-          "hash": "dFSHRaaJH7Cc+lvLksEoZw=="
+          "relative_path": "ref/Ibralogue.Plugins.EnginePlugin.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Plugins.EnginePlugin",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Plugins.PortraitImagePlugin.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Plugins.PortraitImagePlugin.html",
-          "hash": "w6ppBqmiJxIFdeP4oKyHmQ=="
+          "relative_path": "ref/Ibralogue.Plugins.PortraitImagePlugin.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Plugins.PortraitImagePlugin",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Plugins.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Plugins.html",
-          "hash": "zKxmoQmeNCiDuaiRaMCV/A=="
+          "relative_path": "ref/Ibralogue.Plugins.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Plugins",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.SimpleDialogueEngine.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.SimpleDialogueEngine.html",
-          "hash": "yTpF9/YK/y3pctDiYGD8BA=="
+          "relative_path": "ref/Ibralogue.SimpleDialogueEngine.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.SimpleDialogueEngine",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.UnityAudioProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.UnityAudioProvider.html",
-          "hash": "bU1kLp9MG9cDxrEtoZiBcQ=="
+          "relative_path": "ref/Ibralogue.UnityAudioProvider.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.UnityAudioProvider",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.UnityAudioProvider.yml\" sourcestartlinenumber=\"1\">Built-in audio provider that plays clips using a Unity AudioSource.\nClips are loaded via Resources.Load&lt;T&gt;(string) using the clip ID as the path.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.VariableSnapshot.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.VariableSnapshot.html",
-          "hash": "Xr1Zmil94/CWdkTVazWo6Q=="
+          "relative_path": "ref/Ibralogue.VariableSnapshot.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.VariableSnapshot",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.VariableSnapshot.yml\" sourcestartlinenumber=\"1\">A serializable snapshot of all dialogue variable state. Use with\n<xref href=\"Ibralogue.VariableStore.ExportState\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Ibralogue.VariableStore.ImportState(Ibralogue.VariableSnapshot)\" data-throw-if-not-resolved=\"false\"></xref>\nto integrate with save/load systems.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.VariableStore.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.VariableStore.html",
-          "hash": "TPdyEskucpgHfp8lfgV+3A=="
+          "relative_path": "ref/Ibralogue.VariableStore.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.VariableStore",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.VariableStore.yml\" sourcestartlinenumber=\"1\">Centralized variable storage with global and per-asset local scoping.\nResolution order: local (current asset) -&gt; global.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.ButtonChoicePresenter.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.ButtonChoicePresenter.html",
-          "hash": "RPi8KDh5UFR3tZW5NSiS1w=="
+          "relative_path": "ref/Ibralogue.Views.ButtonChoicePresenter.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.ButtonChoicePresenter",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Views.ButtonChoicePresenter.yml\" sourcestartlinenumber=\"1\">Default choice presenter that instantiates button prefabs into a container.\nThis is the same behavior previously built into <xref href=\"Ibralogue.Views.DialogueViewBase\" data-throw-if-not-resolved=\"false\"></xref>,\nextracted as a standalone component for independent use.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.ChoiceButton.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.ChoiceButton.html",
-          "hash": "83tx3vwloSEt/y/542cftQ=="
+          "relative_path": "ref/Ibralogue.Views.ChoiceButton.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.ChoiceButton",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Views.ChoiceButton.yml\" sourcestartlinenumber=\"1\">Represents a UI choice button that triggers an invokable event when clicked.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.DialogueViewBase.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.DialogueViewBase.html",
-          "hash": "wkFpXQ2RNDAdJM6SiVMYKA=="
+          "relative_path": "ref/Ibralogue.Views.DialogueViewBase.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.DialogueViewBase",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.IChoicePresenter.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.IChoicePresenter.html",
-          "hash": "1MZ5qRNYp67NasW7wxyINQ=="
+          "relative_path": "ref/Ibralogue.Views.IChoicePresenter.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.IChoicePresenter",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Views.IChoicePresenter.yml\" sourcestartlinenumber=\"1\">Provides choice display and cleanup. Implement this interface on any\nMonoBehaviour to handle choice presentation independently from the\ndialogue view. Assign it to the engine's Choice Presenter field.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.PunchDialogueView.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.PunchDialogueView.html",
-          "hash": "r8bG5hzW6Zj5snIciIC24g=="
+          "relative_path": "ref/Ibralogue.Views.PunchDialogueView.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.PunchDialogueView",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.TypewriterDialogueView.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.TypewriterDialogueView.html",
-          "hash": "AEZnlf8FrdNIH6P4845SSQ=="
+          "relative_path": "ref/Ibralogue.Views.TypewriterDialogueView.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views.TypewriterDialogueView",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.Views.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.Views.html",
-          "hash": "7wpxFh8cHCKy8MbPArV0GQ=="
+          "relative_path": "ref/Ibralogue.Views.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.Views",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.VisitSnapshot.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.VisitSnapshot.html",
-          "hash": "9WQakcxsIuPHTWopnrg7kA=="
+          "relative_path": "ref/Ibralogue.VisitSnapshot.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.VisitSnapshot",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.VisitSnapshot.yml\" sourcestartlinenumber=\"1\">A serializable snapshot of all visited keys. Use with\n<xref href=\"Ibralogue.VisitTracker.ExportState\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Ibralogue.VisitTracker.ImportState(Ibralogue.VisitSnapshot)\" data-throw-if-not-resolved=\"false\"></xref>\nto integrate with save/load systems.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.VisitTracker.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.VisitTracker.html",
-          "hash": "UHbzX3QsjOJiy6cBcFk7+Q=="
+          "relative_path": "ref/Ibralogue.VisitTracker.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue.VisitTracker",
+      "Summary": "<p sourcefile=\"ref/Ibralogue.VisitTracker.yml\" sourcestartlinenumber=\"1\">Opt-in visit tracking for dialogue conversations and arbitrary keys.\nNothing is tracked unless <xref href=\"Ibralogue.VisitTracker.Mark(System.String)\" data-throw-if-not-resolved=\"false\"></xref> is called explicitly.\nVisited state can be checked from dialogue using\n<code>{{If(Visited(&quot;Tavern&quot;))}}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "ref/Ibralogue.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/Ibralogue.html",
-          "hash": "MglrCnxV/Zz7u3KOdesS6Q=="
+          "relative_path": "ref/Ibralogue.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ibralogue",
+      "Summary": null
     },
     {
       "type": "Toc",
       "source_relative_path": "ref/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "ref/toc.html",
-          "hash": "hGpcLq7URWak3oD5/Gp9Pw=="
+          "relative_path": "ref/toc.html"
+        },
+        ".json": {
+          "relative_path": "ref/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -985,65 +1051,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "XJw+xa8VuRQGddfACo0qTw=="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 21,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 55,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

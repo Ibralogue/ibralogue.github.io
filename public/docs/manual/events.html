@@ -1,29 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Events | Ibralogue Docs </title>
+    <title> | Ibralogue Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Events | Ibralogue Docs ">
-    <meta name="generator" content="docfx 2.56.7.0">
-    
+    <meta name="title" content=" | Ibralogue Docs ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -47,7 +50,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,17 +60,17 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -77,8 +80,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h3 id="events">Events</h3>
 
+<h3 id="events">Events</h3>
 <p>The dialogue engine exposes several UnityEvents that let you react to conversation state changes. These can be wired up in the Inspector or from code.</p>
 <h4 id="persistent-events">Persistent Events</h4>
 <p>These events are configured in the Inspector and survive across conversation switches. They are never cleared automatically.</p>
@@ -128,7 +131,8 @@
 {
     Debug.Log(&quot;Conversation started&quot;);
 });
-</code></pre><h4 id="typed-dialogue-events">Typed Dialogue Events</h4>
+</code></pre>
+<h4 id="typed-dialogue-events">Typed Dialogue Events</h4>
 <p>These events pass data to listeners, making it easy for external systems (quests, analytics, voiceover, etc.) to react to dialogue content.</p>
 <table>
 <thead>
@@ -165,7 +169,8 @@ dialogueEngine.OnChoiceSelected.AddListener((choice) =&gt;
 {
     Debug.Log($&quot;Player chose: {choice.ChoiceName}&quot;);
 });
-</code></pre><h4 id="pause-and-resume-events">Pause and Resume Events</h4>
+</code></pre>
+<h4 id="pause-and-resume-events">Pause and Resume Events</h4>
 <table>
 <thead>
 <tr>
@@ -191,34 +196,37 @@ dialogueEngine.OnChoiceSelected.AddListener((choice) =&gt;
 
 foreach (Line line in log)
     Debug.Log($&quot;{line.Speaker}: {line.LineContent.Text}&quot;);
-</code></pre><p>By default, the history is cleared when a conversation stops. To keep it across conversations (for a persistent dialogue log UI), set <code>PersistHistory</code> to true:</p>
+</code></pre>
+<p>By default, the history is cleared when a conversation stops. To keep it across conversations (for a persistent dialogue log UI), set <code>PersistHistory</code> to true:</p>
 <pre><code class="lang-cs">dialogueEngine.PersistHistory = true;
-</code></pre><p>Call <code>ClearHistory()</code> to clear it manually.</p>
+</code></pre>
+<p>Call <code>ClearHistory()</code> to clear it manually.</p>
 <h4 id="view-events">View Events</h4>
 <p>The dialogue view also exposes events. See the <a href="dialogue-views.html">Dialogue Views</a> page for <code>OnSetView</code> and <code>OnLineComplete</code>.</p>
 <h4 id="interaction-events">Interaction Events</h4>
-<p>Interaction components (<code>SingleInteraction</code>, <code>RandomInteraction</code>, <code>CircularInteraction</code>) have their own <code>OnConversationStart</code> and <code>OnConversationEnd</code> fields in the Inspector. These are wired to the engine&#39;s events when <code>StartDialogue</code> is called. See the <a href="interactions.html">Interactions</a> page for details.</p>
+<p>Interaction components (<code>SingleInteraction</code>, <code>RandomInteraction</code>, <code>CircularInteraction</code>) have their own <code>OnConversationStart</code> and <code>OnConversationEnd</code> fields in the Inspector. These are wired to the engine's events when <code>StartDialogue</code> is called. See the <a href="interactions.html">Interactions</a> page for details.</p>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/events.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -226,14 +234,14 @@ foreach (Line line in log)
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Ibralogue Docs
-            
+      Ibralogue Docs
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>
