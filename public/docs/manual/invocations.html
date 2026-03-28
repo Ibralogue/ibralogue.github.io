@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invocations | Ibralogue Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invocations | Ibralogue Docs ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="invocations">Invocations</h3>
+
+<p>Everything in <code>{{Name(args)}}</code> syntax is an invocation. There are three kinds: <strong>keyword invocations</strong> that control dialogue structure, <strong>standard invocations</strong> that ship with Ibralogue, and <strong>custom invocations</strong> that you write yourself.</p>
+<h4 id="keyword-invocations">Keyword Invocations</h4>
+<p>Keyword invocations are structural -- they shape which content plays and how the dialogue is organized. They cannot be used inline in text.</p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{{ConversationName(name)}}</code></td>
+<td>Defines a named conversation block</td>
+</tr>
+<tr>
+<td><code>{{Jump(target)}}</code></td>
+<td>Jumps to another conversation after the current line</td>
+</tr>
+<tr>
+<td><code>{{If(expr)}}</code> / <code>{{ElseIf(expr)}}</code> / <code>{{Else}}</code> / <code>{{EndIf}}</code></td>
+<td>Conditional flow control</td>
+</tr>
+<tr>
+<td><code>{{Set($var, expr)}}</code></td>
+<td>Assigns a variable</td>
+</tr>
+<tr>
+<td><code>{{Global($var, expr)}}</code></td>
+<td>Declares a global variable</td>
+</tr>
+<tr>
+<td><code>{{Include(asset)}}</code></td>
+<td>Includes another dialogue file</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="conversations.html">Conversations</a>, <a href="conditionals.html">Conditionals</a>, and <a href="global-variables.html">Variables</a> for details.</p>
+<h4 id="standard-invocations">Standard Invocations</h4>
+<p>Ibralogue ships with built-in invocations for common tasks. These can be placed on their own line (fires at line start) or inline in text (fires at that point in the text):</p>
+<table>
+<thead>
+<tr>
+<th>Invocation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{{Image(path)}}</code></td>
+<td>Changes the speaker portrait via the <code>PortraitImagePlugin</code>.</td>
+</tr>
+<tr>
+<td><code>{{Audio(clipId)}}</code></td>
+<td>Plays an audio clip via the engine&#39;s <code>IAudioProvider</code>.</td>
+</tr>
+<tr>
+<td><code>{{Wait(seconds)}}</code></td>
+<td>Pauses the display for the given duration.</td>
+</tr>
+<tr>
+<td><code>{{Speed(multiplier)}}</code></td>
+<td>Changes the text reveal speed for the current line. 2 = twice as fast, 0.5 = half speed. Resets to the configured default on the next line. Affects animated views only.</td>
+</tr>
+<tr>
+<td><code>{{PauseEngine}}</code></td>
+<td>Pauses the engine. Call <code>ResumeConversation()</code> from code to continue. Use this to hand control to external systems.</td>
+</tr>
+<tr>
+<td><code>{{ResumeEngine}}</code></td>
+<td>Resumes a paused engine from within dialogue.</td>
+</tr>
+<tr>
+<td><code>{{MarkVisited(key)}}</code></td>
+<td>Marks a key as visited. Check with <code>Visited(&quot;key&quot;)</code> in conditionals.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-text">[NPC]
+{{Image(Portraits/Happy)}}
+{{Audio(Voiceover/greeting)}}
+Hello there!
+
+[NPC]
+And the winner is... {{Wait(2)}} you!
+
+[NPC]
+Hello! {{Image(Portraits/Surprised)}} I didn&#39;t expect that!
+</code></pre><p><code>{{Wait(seconds)}}</code> and <code>{{Speed(multiplier)}}</code> are meaningful with animated <a href="dialogue-views.html">dialogue views</a> like the typewriter or punch views. With views that display text instantly, Wait still inserts a timed pause but Speed has no effect.</p>
+<h4 id="custom-invocations">Custom Invocations</h4>
+<p>Any C# method with the <code>[DialogueInvocation]</code> attribute can be called from dialogue. Both static methods and instance methods on MonoBehaviours are supported.</p>
+<p><strong>Static invocations</strong> work from anywhere:</p>
+<pre><code class="lang-cs">[DialogueInvocation]
+public static void Die()
+{
+    Debug.Log(&quot;Dead.&quot;);
+}
+</code></pre><pre><code class="lang-text">[NPC]
+Time to die.
+{{Die}}
+</code></pre><p><strong>Instance invocations</strong> are discovered on MonoBehaviours attached to the same GameObject as the dialogue engine. This lets invocations access serialized fields and scene references directly:</p>
+<pre><code class="lang-cs">public class QuestTracker : MonoBehaviour
+{
+    [SerializeField] private QuestDatabase quests;
+
+    [DialogueInvocation]
+    public bool HasQuest(string questId)
+    {
+        return quests.IsComplete(questId);
+    }
+}
+</code></pre><pre><code class="lang-text">{{If(HasQuest(&quot;FindSword&quot;))}}
+[NPC]
+I see you found the sword.
+{{EndIf}}
+</code></pre><h4 id="invocations-that-return-strings">Invocations that Return Strings</h4>
+<p>If an invocation returns a <code>string</code>, the return value is inserted into the dialogue text at the position of the invocation. These always fire before the line is displayed so that the full text is known upfront.</p>
+<pre><code class="lang-cs">[DialogueInvocation]
+public static string GetDay()
+{
+    return System.DateTime.Now.DayOfWeek.ToString();
+}
+</code></pre><pre><code class="lang-text">[NPC]
+Today is {{GetDay}}.
+</code></pre><p>The player sees &quot;Today is Wednesday.&quot; (or whichever day it is).</p>
+<h4 id="accessing-the-engine">Accessing the Engine</h4>
+<p>An invocation can optionally accept a <code>DialogueEngineBase</code> parameter to access the engine API:</p>
+<pre><code class="lang-cs">[DialogueInvocation]
+public static void PauseForDrama(DialogueEngineBase engine)
+{
+    engine.PauseConversation();
+}
+</code></pre><h4 id="async-invocations">Async Invocations</h4>
+<p>If an invocation returns <code>IEnumerator</code>, the engine automatically yields on it, blocking the dialogue until the coroutine finishes. This is useful for cutscenes, animations, or any work that takes time:</p>
+<pre><code class="lang-cs">[DialogueInvocation]
+public IEnumerator PlayCutscene(string name)
+{
+    yield return CutsceneManager.Play(name);
+}
+</code></pre><pre><code class="lang-text">[&gt;&gt;]
+{{PlayCutscene(intro)}}
+
+[NPC]
+That was something!
+</code></pre><p>The engine pauses the text reveal (if active) while the coroutine runs, then resumes. On silent lines (<code>[&gt;&gt;]</code>), the engine waits for the coroutine to finish before advancing.</p>
+<p>This is different from <code>{{Wait(seconds)}}</code> which only pauses the text animation for a fixed duration, and from <code>{{PauseEngine}}</code> which halts the engine until <code>ResumeConversation()</code> is called manually. Async invocations express their own duration naturally.</p>
+<h4 id="variables-as-arguments">Variables as Arguments</h4>
+<p><a href="global-variables.html">Variables</a> are resolved inside invocation arguments:</p>
+<pre><code class="lang-text">[NPC]
+You received {{GiveItem($REWARD)}}.
+</code></pre><p>If <code>REWARD</code> is <code>&quot;Sword&quot;</code>, <code>GiveItem</code> receives <code>&quot;Sword&quot;</code>.</p>
+<h4 id="discovery">Discovery</h4>
+<p><strong>Static methods</strong> are discovered by scanning assemblies. By default, Ibralogue searches <code>Assembly-CSharp</code> and its own assembly. Configure this on the dialogue engine component:</p>
+<ul>
+<li><strong>Search All Assemblies</strong>: Enable this to search every loaded assembly.</li>
+<li><strong>Included Assemblies</strong>: Add specific assembly names to the search list.</li>
+</ul>
+<p><strong>Instance methods</strong> are discovered on MonoBehaviours attached to the engine&#39;s own GameObject automatically. For components on other GameObjects, drag them into the engine&#39;s <strong>Invocation Providers</strong> array.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/invocations.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ibralogue Docs
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

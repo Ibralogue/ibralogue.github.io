@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DialogueStandardLibrary
+   | Ibralogue Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DialogueStandardLibrary
+   | Ibralogue Docs ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ibralogue.DialogueStandardLibrary">
+  
+  
+  <h1 id="Ibralogue_DialogueStandardLibrary" data-uid="Ibralogue.DialogueStandardLibrary" class="text-break">Class DialogueStandardLibrary
+  </h1>
+  <div class="markdown level0 summary"><p>Standard invocations that ship with Ibralogue.
+These follow the same {{Name(args)}} syntax as the rest of the language
+and can be used inline in dialogue text.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DialogueStandardLibrary</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ibralogue.html">Ibralogue</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Ibralogue_DialogueStandardLibrary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DialogueStandardLibrary</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_Audio_" data-uid="Ibralogue.DialogueStandardLibrary.Audio*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_Audio_Ibralogue_DialogueEngineBase_System_String_" data-uid="Ibralogue.DialogueStandardLibrary.Audio(Ibralogue.DialogueEngineBase,System.String)">Audio(DialogueEngineBase, String)</h4>
+  <div class="markdown level1 summary"><p>Plays an audio clip through the engine&apos;s audio provider.</p>
+<pre><code>[NPC]
+Watch out! {{Audio(SFX/explosion)}}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Audio(DialogueEngineBase engine, string clipId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clipId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_Image_" data-uid="Ibralogue.DialogueStandardLibrary.Image*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_Image_Ibralogue_DialogueEngineBase_System_String_" data-uid="Ibralogue.DialogueStandardLibrary.Image(Ibralogue.DialogueEngineBase,System.String)">Image(DialogueEngineBase, String)</h4>
+  <div class="markdown level1 summary"><p>Changes the speaker portrait. On its own line, fires at line start.
+Inline in text, fires at that position.</p>
+<pre><code>[NPC]
+Hello! {{Image(Portraits/Surprised)}} Whoa!</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Image(DialogueEngineBase engine, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_MarkVisited_" data-uid="Ibralogue.DialogueStandardLibrary.MarkVisited*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_MarkVisited_System_String_" data-uid="Ibralogue.DialogueStandardLibrary.MarkVisited(System.String)">MarkVisited(String)</h4>
+  <div class="markdown level1 summary"><p>Marks a key as visited. Check from dialogue with
+<code>{{If(Visited(&quot;Tavern&quot;))}}</code> or from code with
+<code>VisitTracker.HasVisited(&quot;Tavern&quot;)</code>.</p>
+<pre><code>[NPC]
+{{MarkVisited(Tavern)}}
+Welcome to the tavern!</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MarkVisited(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_PauseEngine_" data-uid="Ibralogue.DialogueStandardLibrary.PauseEngine*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_PauseEngine_Ibralogue_DialogueEngineBase_" data-uid="Ibralogue.DialogueStandardLibrary.PauseEngine(Ibralogue.DialogueEngineBase)">PauseEngine(DialogueEngineBase)</h4>
+  <div class="markdown level1 summary"><p>Pauses the dialogue engine. The conversation halts until
+<code>ResumeConversation()</code> is called from code. Use this to
+hand control to an external system (cutscene, animation, minigame)
+and resume when it finishes.</p>
+<pre><code>[NPC]
+{{PauseEngine}}
+Watch this!</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PauseEngine(DialogueEngineBase engine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_ResumeEngine_" data-uid="Ibralogue.DialogueStandardLibrary.ResumeEngine*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_ResumeEngine_Ibralogue_DialogueEngineBase_" data-uid="Ibralogue.DialogueStandardLibrary.ResumeEngine(Ibralogue.DialogueEngineBase)">ResumeEngine(DialogueEngineBase)</h4>
+  <div class="markdown level1 summary"><p>Resumes a paused dialogue engine from within dialogue.
+Typically not needed since external systems call
+<code>ResumeConversation()</code> directly, but available for
+cases where dialogue itself should trigger the resume
+(e.g., after a timed wait).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResumeEngine(DialogueEngineBase engine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_Speed_" data-uid="Ibralogue.DialogueStandardLibrary.Speed*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_Speed_Ibralogue_DialogueEngineBase_System_Single_" data-uid="Ibralogue.DialogueStandardLibrary.Speed(Ibralogue.DialogueEngineBase,System.Single)">Speed(DialogueEngineBase, Single)</h4>
+  <div class="markdown level1 summary"><p>Changes the text reveal speed for the current line. A multiplier of 2
+is twice as fast, 0.5 is half speed. Works with any animated view.
+Speed resets to the configured default on the next line.</p>
+<pre><code>[NPC]
+This is normal. {{Speed(0.3)}} This... is... slow.</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Speed(DialogueEngineBase engine, float multiplier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">multiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_Visited_" data-uid="Ibralogue.DialogueStandardLibrary.Visited*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_Visited_System_String_" data-uid="Ibralogue.DialogueStandardLibrary.Visited(System.String)">Visited(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the given key has been marked as visited.
+Intended for use in conditionals.</p>
+<pre><code>{{If(Visited(&quot;Tavern&quot;))}}
+[NPC]
+You&apos;ve been here before.
+{{EndIf}}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Visited(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ibralogue_DialogueStandardLibrary_Wait_" data-uid="Ibralogue.DialogueStandardLibrary.Wait*"></a>
+  <h4 id="Ibralogue_DialogueStandardLibrary_Wait_Ibralogue_DialogueEngineBase_System_Single_" data-uid="Ibralogue.DialogueStandardLibrary.Wait(Ibralogue.DialogueEngineBase,System.Single)">Wait(DialogueEngineBase, Single)</h4>
+  <div class="markdown level1 summary"><p>Pauses the text animation for the given number of seconds.</p>
+<pre><code>[NPC]
+And the winner is... {{Wait(2)}} you!</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Wait(DialogueEngineBase engine, float seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></td>
+        <td><span class="parametername">engine</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">seconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ibralogue Docs
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

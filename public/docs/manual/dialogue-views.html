@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dialogue Views | Ibralogue Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dialogue Views | Ibralogue Docs ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="dialogue-views">Dialogue Views</h3>
+
+<p>A dialogue view controls how text is presented to the player. Assign a view to the engine&#39;s <code>Dialogue View</code> field, or leave it empty to run in headless mode.</p>
+<p>Ibralogue ships with two built-in views. You can also create your own by subclassing <code>DialogueViewBase</code>.</p>
+<h4 id="headless--event-driven-mode">Headless / Event-Driven Mode</h4>
+<p>The dialogue view is optional. When no view is assigned, the engine runs the full dialogue pipeline (parsing, variable resolution, invocations, events) without driving any UI. All typed events (<code>OnLineDisplayed</code>, <code>OnChoicesPresented</code>, <code>OnChoiceSelected</code>) still fire normally.</p>
+<p>This is useful for:</p>
+<ul>
+<li>Driving custom UI through events (e.g., UI Toolkit)</li>
+<li>Non-visual dialogue consumers (analytics, quest tracking, testing)</li>
+<li>Systems that only need the data, not the presentation</li>
+</ul>
+<p>In headless mode, lines complete instantly (no animation) and choices must be submitted programmatically:</p>
+<pre><code class="lang-cs">dialogueEngine.OnChoicesPresented.AddListener((choices) =&gt;
+{
+    // Present choices in your own UI, then:
+    dialogueEngine.SelectChoice(choices[selectedIndex]);
+});
+</code></pre><h4 id="typewriterdialogueview">TypewriterDialogueView</h4>
+<p>Reveals text one character at a time, like a typewriter.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Character Delay</code></td>
+<td>Seconds between each character reveal. Default: <code>0.03</code>.</td>
+</tr>
+<tr>
+<td><code>Character Window</code></td>
+<td>Number of characters revealed per step. Default: <code>1</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>OnTypewriterEffectUpdated</code> event fires each time characters are revealed. This is useful for playing a typing sound effect.</p>
+<p>The delay can also be changed at runtime:</p>
+<pre><code class="lang-cs">typewriterView.SetCharacterDelay(0.01f);
+</code></pre><h4 id="punchdialogueview">PunchDialogueView</h4>
+<p>Reveals text one word at a time.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Word Delay</code></td>
+<td>Seconds between each word reveal. Default: <code>0.2</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>OnPunchEffectUpdated</code> event fires each time a new word becomes visible.</p>
+<pre><code class="lang-cs">punchView.SetWordDelay(0.1f);
+</code></pre><h4 id="skipping-the-effect">Skipping the Effect</h4>
+<p>Both built-in views support skipping the reveal animation. Call <code>SkipViewEffect()</code> to instantly show all text for the current line:</p>
+<pre><code class="lang-cs">dialogueView.SkipViewEffect();
+</code></pre><h4 id="shared-fields">Shared Fields</h4>
+<p>All views inherit these fields from <code>DialogueViewBase</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Name Text</code></td>
+<td>A TextMeshProUGUI component for displaying the speaker name.</td>
+</tr>
+<tr>
+<td><code>Sentence Text</code></td>
+<td>A TextMeshProUGUI component for displaying the dialogue text.</td>
+</tr>
+<tr>
+<td><code>Choice Button Holder</code></td>
+<td>A Transform that serves as the parent for instantiated choice buttons.</td>
+</tr>
+<tr>
+<td><code>Choice Button</code></td>
+<td>A prefab with a <code>ChoiceButton</code> component. Used when choices are displayed.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>OnSetView</code> event fires every time a new dialogue line is displayed. The <code>OnLineComplete</code> event fires when the view finishes its display effect.</p>
+<h4 id="creating-a-custom-view">Creating a Custom View</h4>
+<p>To create your own view, subclass <code>DialogueViewBase</code> and override the relevant methods. The <code>SetView</code> method receives a <code>Line</code> object containing the speaker, text, image, and metadata for the current line:</p>
+<pre><code class="lang-cs">public class MyCustomView : DialogueViewBase
+{
+    public override void SetView(Line line)
+    {
+        base.SetView(line);
+        // Your custom display logic here
+    }
+
+    public override bool IsStillDisplaying()
+    {
+        // Return true while your effect is still running
+        return false;
+    }
+
+    public override void SkipViewEffect()
+    {
+        // Instantly complete your effect
+    }
+
+    public override void ClearView()
+    {
+        base.ClearView();
+        // Any additional cleanup
+    }
+}
+</code></pre><p>The engine calls <code>SetView</code> when a line should be displayed, waits until <code>IsStillDisplaying</code> returns <code>false</code>, and then waits for the player to advance. <code>ClearView</code> is called before each new line and when the conversation ends.</p>
+<h4 id="invocation-timing-in-animated-views">Invocation Timing in Animated Views</h4>
+<p>When a view reveals text incrementally (like the typewriter or punch views), <a href="invocations.html">invocations</a> placed inline in dialogue text fire at their character position as the text is revealed. For example, <code>{{Audio(boom)}}</code> placed mid-sentence fires when the view reaches that point in the text.</p>
+<p>With views that display text instantly (like the base <code>DialogueViewBase</code>), all invocations fire immediately since the full text is visible from the start.</p>
+<p>Custom views that implement incremental text reveal should update <code>VisibleCharacterCount</code> to enable position-based invocation timing:</p>
+<pre><code class="lang-cs">public override int VisibleCharacterCount
+{
+    get { return sentenceText.maxVisibleCharacters; }
+}
+</code></pre><h4 id="auto-advance">Auto-Advance</h4>
+<p>Set the <strong>Auto-Advance Delay</strong> field on the engine to a value greater than zero to make lines advance automatically after the display effect finishes. The delay is in seconds. Choices still require player input.</p>
+<p>This is useful for cutscenes or ambient dialogue where no player interaction is needed.</p>
+<pre><code class="lang-cs">// Enable auto-advance from code
+dialogueEngine.AutoAdvanceDelay = 2.0f;
+
+// Disable it
+dialogueEngine.AutoAdvanceDelay = 0f;
+</code></pre><h4 id="player-input">Player Input</h4>
+<p>Use <code>Advance()</code> as your single input handler for player clicks, key presses, or taps. It skips the current display effect if a line is still playing, or advances to the next line if idle:</p>
+<pre><code class="lang-cs">void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Space))
+        dialogueEngine.Advance();
+}
+</code></pre><p><code>Next()</code> is available if you want the old behavior of only advancing when the current line is finished (no skip).</p>
+<h4 id="custom-views-without-textmeshpro">Custom Views Without TextMeshPro</h4>
+<p>The base class <code>nameText</code> and <code>sentenceText</code> fields are optional. If your view uses a different text system (UI Toolkit, custom renderer), leave them unassigned and override <code>SetView</code> and <code>ClearView</code>:</p>
+<pre><code class="lang-cs">public class UIToolkitView : DialogueViewBase
+{
+    private Label _nameLabel;
+    private Label _textLabel;
+
+    public override void SetView(Line line)
+    {
+        _nameLabel.text = line.Speaker;
+        _textLabel.text = line.LineContent.Text;
+        OnSetView.Invoke();
+    }
+
+    public override void ClearView()
+    {
+        _nameLabel.text = &quot;&quot;;
+        _textLabel.text = &quot;&quot;;
+    }
+}
+</code></pre><h4 id="chat--message-ui-pattern">Chat / Message UI Pattern</h4>
+<p>The engine calls <code>ClearView</code> before each new line. For a chat UI that accumulates messages, override <code>ClearView</code> to preserve previous messages:</p>
+<pre><code class="lang-cs">public class ChatView : DialogueViewBase
+{
+    [SerializeField] private Transform messageContainer;
+    [SerializeField] private GameObject messagePrefab;
+
+    public override void SetView(Line line)
+    {
+        var bubble = Instantiate(messagePrefab, messageContainer);
+        bubble.GetComponentInChildren&lt;TMP_Text&gt;().text =
+            $&quot;{line.Speaker}: {line.LineContent.Text}&quot;;
+        OnSetView.Invoke();
+    }
+
+    public override void ClearView()
+    {
+        // Keep previous messages. Only override if you need
+        // to clean up transient UI (typing indicators, etc.)
+    }
+}
+</code></pre><h4 id="customizing-the-engine-display-loop">Customizing the Engine Display Loop</h4>
+<p>If you need to customize what happens when a line is displayed (beyond what a view provides), you can subclass the engine and override <code>OnDisplayLine</code>:</p>
+<pre><code class="lang-cs">public class MyEngine : SimpleDialogueEngine
+{
+    protected override IEnumerator OnDisplayLine(Line line)
+    {
+        // Custom logic before display
+        Debug.Log($&quot;{line.Speaker} says: {line.LineContent.Text}&quot;);
+
+        // Call base to use the standard view/plugin/function pipeline
+        yield return base.OnDisplayLine(line);
+
+        // Custom logic after display
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ibralogue/Ibralogue/blob/dev/Documentation~/manual/dialogue-views.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ibralogue Docs
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Ibralogue
+   | Ibralogue Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Ibralogue
+   | Ibralogue Docs ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ibralogue">
+  
+  <h1 id="Ibralogue" data-uid="Ibralogue" class="text-break">Namespace Ibralogue
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Ibralogue.ChoiceEvent.html">ChoiceEvent</a></h4>
+      <section><p>Serializable UnityEvent that passes a single <see cref="!:Choice"></see> to listeners.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.ChoiceListEvent.html">ChoiceListEvent</a></h4>
+      <section><p>Serializable UnityEvent that passes a list of <see cref="!:Choice"></see> to listeners.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.ConversationProgress.html">ConversationProgress</a></h4>
+      <section><p>A serializable snapshot of the engine&apos;s position within a conversation.
+Use with <a class="xref" href="Ibralogue.DialogueEngineBase.html#Ibralogue_DialogueEngineBase_ExportProgress">ExportProgress()</a> and
+<a class="xref" href="Ibralogue.DialogueEngineBase.html#Ibralogue_DialogueEngineBase_ResumeFromProgress_DialogueAsset_Ibralogue_ConversationProgress_">ResumeFromProgress(DialogueAsset, ConversationProgress)</a> to save and restore
+mid-conversation state.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.DialogueEngineBase.html">DialogueEngineBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ibralogue.DialogueInvocationAttribute.html">DialogueInvocationAttribute</a></h4>
+      <section><p>Marks a static method as a custom invocation that can be called from dialogue files.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.DialogueLogger.html">DialogueLogger</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ibralogue.DialogueStandardLibrary.html">DialogueStandardLibrary</a></h4>
+      <section><p>Standard invocations that ship with Ibralogue.
+These follow the same {{Name(args)}} syntax as the rest of the language
+and can be used inline in dialogue text.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.IbralogueSettings.html">IbralogueSettings</a></h4>
+      <section><p>Project-wide settings for Ibralogue. Create via
+<strong>Edit &gt; Project Settings &gt; Ibralogue</strong> or place an instance
+at <code>Assets/Resources/IbralogueSettings.asset</code>.
+These settings apply across the entire project, regardless of how many
+dialogue engines exist in your scenes.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.LineEvent.html">LineEvent</a></h4>
+      <section><p>Serializable UnityEvent that passes a <see cref="!:Line"></see> to listeners.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.SimpleDialogueEngine.html">SimpleDialogueEngine</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ibralogue.UnityAudioProvider.html">UnityAudioProvider</a></h4>
+      <section><p>Built-in audio provider that plays clips using a Unity AudioSource.
+Clips are loaded via <see cref="!:Resources.Load&lt;T>(string)"></see> using the clip ID as the path.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.VariableSnapshot.html">VariableSnapshot</a></h4>
+      <section><p>A serializable snapshot of all dialogue variable state. Use with
+<a class="xref" href="Ibralogue.VariableStore.html#Ibralogue_VariableStore_ExportState">ExportState()</a> and <a class="xref" href="Ibralogue.VariableStore.html#Ibralogue_VariableStore_ImportState_Ibralogue_VariableSnapshot_">ImportState(VariableSnapshot)</a>
+to integrate with save/load systems.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.VariableStore.html">VariableStore</a></h4>
+      <section><p>Centralized variable storage with global and per-asset local scoping.
+Resolution order: local (current asset) -&gt; global.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.VisitSnapshot.html">VisitSnapshot</a></h4>
+      <section><p>A serializable snapshot of all visited keys. Use with
+<a class="xref" href="Ibralogue.VisitTracker.html#Ibralogue_VisitTracker_ExportState">ExportState()</a> and <a class="xref" href="Ibralogue.VisitTracker.html#Ibralogue_VisitTracker_ImportState_Ibralogue_VisitSnapshot_">ImportState(VisitSnapshot)</a>
+to integrate with save/load systems.</p>
+</section>
+      <h4><a class="xref" href="Ibralogue.VisitTracker.html">VisitTracker</a></h4>
+      <section><p>Opt-in visit tracking for dialogue conversations and arbitrary keys.
+Nothing is tracked unless <a class="xref" href="Ibralogue.VisitTracker.html#Ibralogue_VisitTracker_Mark_System_String_">Mark(String)</a> is called explicitly.
+Visited state can be checked from dialogue using
+<code>{{If(Visited(&quot;Tavern&quot;))}}</code>.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Ibralogue.DialogueEngineBase.CachedInvocation.html">DialogueEngineBase.CachedInvocation</a></h4>
+      <section><p>Pairs a method with its invocation target. Target is null for static methods.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Ibralogue.IAudioProvider.html">IAudioProvider</a></h4>
+      <section><p>Provides audio playback for dialogue lines. Implement this interface to
+integrate Ibralogue with any audio backend (Unity AudioSource, FMOD, Wwise, etc.).</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Ibralogue.DiagnosticStrictness.html">DiagnosticStrictness</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ibralogue.LogLevel.html">LogLevel</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ibralogue Docs
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

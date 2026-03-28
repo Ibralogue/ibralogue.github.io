@@ -1,0 +1,1052 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "ref/*": {
+        "baseUrl": "https://ibralogue.github.io/docs/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://ibralogue.github.io/docs/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "/github/workspace/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "85FV80vtqtDF+upqLxonmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/basic-syntax.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basic-syntax.html",
+          "hash": "gXtHF+poJxs/6arUhpTsiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/choices.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/choices.html",
+          "hash": "O+Bvix3t1APzyrOCIPD29g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/comments.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/comments.html",
+          "hash": "ZoqEUBh1C+IffX34JmUZEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/conditionals.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/conditionals.html",
+          "hash": "wrPh0K7785eJmqhFr6ZkZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/conversations.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/conversations.html",
+          "hash": "co8QMvgVZtIyC5413vgE4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/dialogue-views.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/dialogue-views.html",
+          "hash": "M3ppaMllxl4omzaAYeE62g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/engine-plugins.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/engine-plugins.html",
+          "hash": "iOaQiihWapx8x1jE7eCMag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/escape-sequences.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/escape-sequences.html",
+          "hash": "I3V9ss+UkSl7bY5cB8QqNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/events.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/events.html",
+          "hash": "cc3eqaedez2U7nntyjxG5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/global-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/global-variables.html",
+          "hash": "6K+AuIuBwa8tsjkPFXJncQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/includes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/includes.html",
+          "hash": "EfZolDXqBoe2W7uh3kmwZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/interactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/interactions.html",
+          "hash": "iaXaKasZeqxU4xI9HF2KVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/invocations.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/invocations.html",
+          "hash": "vADFr8H8nHyk2fdJe2Tk/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/jumps.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/jumps.html",
+          "hash": "/sGZPjDjINiUI7xFCjtD6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/localization.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/localization.html",
+          "hash": "N4mzToQMsx1RYtXGZvqeAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/pause-and-resume.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/pause-and-resume.html",
+          "hash": "WzJu1tdOLSf6uMsYhlGEuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/project-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/project-settings.html",
+          "hash": "l2C5qJ6dOd9x2Z0h1WwPaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/quickstart.html",
+          "hash": "fzSrosz1ptggbfxRLDZlGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/rich-text.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/rich-text.html",
+          "hash": "m20eXexl3XfvPCFhJhuVKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/save-and-load.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/save-and-load.html",
+          "hash": "IuvR+Mvz19DupEDgNSposA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "QwSnQOAr68Dgg/RyLYGTqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.ChoiceEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.ChoiceEvent.html",
+          "hash": "hsKurFVTEPw1Hz+wRMAkvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.ChoiceListEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.ChoiceListEvent.html",
+          "hash": "EMLKicEnsnxO+0M+oO/rtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.ConversationProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.ConversationProgress.html",
+          "hash": "DehhIOi50rbCKCn/1Pa6vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DiagnosticStrictness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DiagnosticStrictness.html",
+          "hash": "WhIqxudKRMZtPrwIjz8y/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DialogueEngineBase.CachedInvocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DialogueEngineBase.CachedInvocation.html",
+          "hash": "OdbGjBf2S8TkBJb/DnaXzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DialogueEngineBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DialogueEngineBase.html",
+          "hash": "NkId+9m/RZJ3/wBmpz3jog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DialogueInvocationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DialogueInvocationAttribute.html",
+          "hash": "X+f5HrAdAPiz7It6HV8BxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DialogueLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DialogueLogger.html",
+          "hash": "gGT1pFm7vimoOADgH87AYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.DialogueStandardLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.DialogueStandardLibrary.html",
+          "hash": "I512dT+3gNHtyj7G9wzazQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.CreateIbralogue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.CreateIbralogue.html",
+          "hash": "yDhB7O6B47QV5O06ongGKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.IbralogueDebugWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.IbralogueDebugWindow.html",
+          "hash": "3Yrvq4uJnSEC1iKwBkLQyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.IbralogueImporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.IbralogueImporter.html",
+          "hash": "fN7TctAdZlxV+CTETOkCGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.IbralogueImporterEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.IbralogueImporterEditor.html",
+          "hash": "vS9EH3Zr9n9irTZhn0AySQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.IbralogueSettingsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.IbralogueSettingsProvider.html",
+          "hash": "KRQcJxu373s/XXWISQZC3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.LocalizationExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.LocalizationExporter.html",
+          "hash": "AQDCU6ySFx4mO5H9PvkdBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Editor.html",
+          "hash": "Zi9kiH46hp+KzvLnqaxRng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.IAudioProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.IAudioProvider.html",
+          "hash": "wXLyYVPt1xCBaX2w/g46lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.IbralogueSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.IbralogueSettings.html",
+          "hash": "DO5XyX/+ddzjE4gfF3sReA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Interactions.BaseInteraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Interactions.BaseInteraction.html",
+          "hash": "A6GKu2zyB7TEGsLoVMChIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Interactions.CircularInteraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Interactions.CircularInteraction.html",
+          "hash": "Zplp9PV0Tcip0MQD99ju1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Interactions.RandomInteraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Interactions.RandomInteraction.html",
+          "hash": "9hpvl/EDQTGhhTwOFplTdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Interactions.SingleInteraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Interactions.SingleInteraction.html",
+          "hash": "qqXlelKmfFJ37VEQmoa2CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Interactions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Interactions.html",
+          "hash": "rD6X72Pzoeqzpm9Vl/3GhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.LineEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.LineEvent.html",
+          "hash": "0gMHTjGPdnR2Uk76jWGKUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Localization.CsvLocalizationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Localization.CsvLocalizationProvider.html",
+          "hash": "XkC6rmVpyyZCZZ92ida62w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Localization.ILocalizationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Localization.ILocalizationProvider.html",
+          "hash": "Lm/w5FvOzbGCZsisbDEuUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Localization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Localization.html",
+          "hash": "bIRTefpcRnh/7IHQ2Ya56Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.LogLevel.html",
+          "hash": "fsb3mdLrxe0WhU48dlHtwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.Choice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.Choice.html",
+          "hash": "Ogg4tI861L581Q6xPNdl+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.Conversation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.Conversation.html",
+          "hash": "JsEJt+UCnBBbycOcWIC1ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.DialogueAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.DialogueAsset.html",
+          "hash": "oFoo/FdECODHv/9Q2FSJGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.DialogueParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.DialogueParser.html",
+          "hash": "zusyBD4yPfa+PHS3yi7YsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.IMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.IMetadata.html",
+          "hash": "lR/BveYfKLmeDbjlh8QjsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.Invocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.Invocation.html",
+          "hash": "ZGLndMV5956D5YPVBtrzWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.Line.html",
+          "hash": "tSbSLtxGbDsZ3P39RVudDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.LineContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.LineContent.html",
+          "hash": "c7XCxS2d0cLwiD/iNpOCKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Parser.html",
+          "hash": "vaptRAZ+kqP44MgM/17wCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Plugins.AudioLinePlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Plugins.AudioLinePlugin.html",
+          "hash": "/k80MxnOz7cIhv1s9jALXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Plugins.EnginePlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Plugins.EnginePlugin.html",
+          "hash": "dFSHRaaJH7Cc+lvLksEoZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Plugins.PortraitImagePlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Plugins.PortraitImagePlugin.html",
+          "hash": "w6ppBqmiJxIFdeP4oKyHmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Plugins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Plugins.html",
+          "hash": "zKxmoQmeNCiDuaiRaMCV/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.SimpleDialogueEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.SimpleDialogueEngine.html",
+          "hash": "yTpF9/YK/y3pctDiYGD8BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.UnityAudioProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.UnityAudioProvider.html",
+          "hash": "bU1kLp9MG9cDxrEtoZiBcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.VariableSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.VariableSnapshot.html",
+          "hash": "Xr1Zmil94/CWdkTVazWo6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.VariableStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.VariableStore.html",
+          "hash": "TPdyEskucpgHfp8lfgV+3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.ButtonChoicePresenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.ButtonChoicePresenter.html",
+          "hash": "RPi8KDh5UFR3tZW5NSiS1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.ChoiceButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.ChoiceButton.html",
+          "hash": "83tx3vwloSEt/y/542cftQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.DialogueViewBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.DialogueViewBase.html",
+          "hash": "wkFpXQ2RNDAdJM6SiVMYKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.IChoicePresenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.IChoicePresenter.html",
+          "hash": "1MZ5qRNYp67NasW7wxyINQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.PunchDialogueView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.PunchDialogueView.html",
+          "hash": "r8bG5hzW6Zj5snIciIC24g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.TypewriterDialogueView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.TypewriterDialogueView.html",
+          "hash": "AEZnlf8FrdNIH6P4845SSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.Views.html",
+          "hash": "7wpxFh8cHCKy8MbPArV0GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.VisitSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.VisitSnapshot.html",
+          "hash": "9WQakcxsIuPHTWopnrg7kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.VisitTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.VisitTracker.html",
+          "hash": "UHbzX3QsjOJiy6cBcFk7+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/Ibralogue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/Ibralogue.html",
+          "hash": "MglrCnxV/Zz7u3KOdesS6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ref/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/toc.html",
+          "hash": "hGpcLq7URWak3oD5/Gp9Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "XJw+xa8VuRQGddfACo0qTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 21,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 55,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
