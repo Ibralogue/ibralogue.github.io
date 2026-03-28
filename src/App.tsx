@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import SyntaxShowcase from './components/SyntaxShowcase'
 import Installation from './components/Installation'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <SyntaxShowcase />
       <Installation />
+      <Footer />
     </div>
   )
 }
