@@ -95,12 +95,11 @@ function DialogueBox({ source }: { source: string }) {
       </div>
       <div
         ref={scrollRef}
-        className="relative p-5 h-[260px] overflow-y-auto"
+        className="relative h-[280px] overflow-y-auto"
       >
-        {/* Top fade when scrollable */}
-        <div className="sticky top-0 left-0 right-0 h-6 -mt-5 mb-0 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
+        <div className="sticky top-0 left-0 right-0 h-4 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
 
-        <div className="space-y-3">
+        <div className="px-5 pb-5 space-y-3">
           {items.map((item, i) =>
             item.type === 'line' ? (
               <div key={i}>
@@ -129,10 +128,16 @@ function DialogueBox({ source }: { source: string }) {
 }
 
 export default function Hero() {
+  const codeScrollRef = useRef<HTMLDivElement>(null)
   const { displayed, isTyping } = useTypingEffect(IBRA_SOURCE, {
     speed: 40,
     pauseAtEnd: 5000,
   })
+
+  useEffect(() => {
+    const el = codeScrollRef.current
+    if (el) el.scrollTop = el.scrollHeight
+  }, [displayed])
 
   return (
     <section className="max-w-5xl mx-auto px-6 py-20">
@@ -178,11 +183,14 @@ export default function Hero() {
             </div>
             <span className="text-[11px] font-mono text-ink-faint tracking-wide">village.ibra</span>
           </div>
-          <div className="p-4 font-mono text-[13px] text-ink-muted min-h-[220px]">
-            {highlightIbra(displayed)}
-            {isTyping && (
-              <span className="inline-block w-[7px] h-[15px] bg-teal-500 ml-0.5 animate-pulse motion-reduce:hidden" aria-hidden="true" />
-            )}
+          <div className="relative h-[280px] overflow-y-auto" ref={codeScrollRef}>
+            <div className="sticky top-0 left-0 right-0 h-4 bg-gradient-to-b from-surface-warm to-transparent pointer-events-none z-10" />
+            <div className="px-4 pb-4 font-mono text-[13px] text-ink-muted">
+              {highlightIbra(displayed)}
+              {isTyping && (
+                <span className="inline-block w-[7px] h-[15px] bg-teal-500 ml-0.5 animate-pulse motion-reduce:hidden" aria-hidden="true" />
+              )}
+            </div>
           </div>
         </div>
 
