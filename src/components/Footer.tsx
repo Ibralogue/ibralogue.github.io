@@ -1,95 +1,54 @@
+import { URLS } from '../constants'
+
 const LINKS = {
   project: [
-    {
-      label: 'Documentation',
-      href: 'https://ibralogue.github.io/Ibralogue/index.html',
-    },
-    {
-      label: 'GitHub',
-      href: 'https://github.com/Ibralogue/Ibralogue',
-    },
-    {
-      label: 'Release Notes',
-      href: 'https://github.com/Ibralogue/Ibralogue/releases/tag/v1.0.0',
-    },
+    { label: 'Documentation', href: URLS.docs },
+    { label: 'GitHub', href: URLS.github },
+    { label: 'Release Notes', href: URLS.release },
   ],
   community: [
-    {
-      label: 'Discord',
-      href: 'https://discord.gg/xa3zvF6tP7',
-    },
-    {
-      label: 'Patreon',
-      href: 'https://www.patreon.com/ibrahh',
-    },
-    {
-      label: 'Report a Bug',
-      href: 'https://github.com/Ibralogue/Ibralogue/issues/new/choose',
-    },
+    { label: 'Discord', href: URLS.discord },
+    { label: 'Patreon', href: URLS.patreon },
+    { label: 'Report a Bug', href: URLS.issues },
   ],
 }
 
 export default function Footer() {
   return (
-    <footer className="border-t border-surface-dim mt-12">
-      <div className="max-w-5xl mx-auto px-6 py-12">
+    <footer className="border-t border-surface-dim">
+      <div className="max-w-5xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-3 gap-8">
-          {/* Brand */}
           <div>
             <p className="text-sm font-semibold text-ink mb-2">Ibralogue</p>
             <p className="text-sm text-ink-muted leading-relaxed">
               A simple, extendable dialogue system library for the Unity Game Engine.
             </p>
           </div>
-
-          {/* Project links */}
-          <div>
-            <p className="text-xs font-semibold text-ink-faint uppercase tracking-wider mb-3">
-              Project
-            </p>
-            <ul className="space-y-2">
-              {LINKS.project.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-ink-muted hover:text-teal-500 transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Community links */}
-          <div>
-            <p className="text-xs font-semibold text-ink-faint uppercase tracking-wider mb-3">
-              Community
-            </p>
-            <ul className="space-y-2">
-              {LINKS.community.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-ink-muted hover:text-teal-500 transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {Object.entries(LINKS).map(([group, links]) => (
+            <div key={group}>
+              <p className="text-xs font-semibold text-ink-faint uppercase tracking-wider mb-3">
+                {group}
+              </p>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-ink-muted hover:text-teal-500 focus-visible:outline-none focus-visible:underline transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-surface-dim">
-          <p className="text-xs text-ink-faint">
-            MIT License &middot; Unity 2022.3+
-          </p>
+          <p className="text-xs text-ink-faint">MIT License &middot; Unity 2022.3+</p>
         </div>
       </div>
     </footer>
