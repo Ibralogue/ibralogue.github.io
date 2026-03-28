@@ -76,7 +76,7 @@ function DialogueBox({ source }: { source: string }) {
             item.type === 'line' ? (
               <div key={i}>
                 <p className="text-xs font-semibold text-teal-500 uppercase tracking-wider mb-0.5">{item.speaker}</p>
-                <p className="text-ink text-[15px] leading-relaxed">{item.text}</p>
+                <p className="text-ink text-dialogue">{item.text}</p>
               </div>
             ) : (
               <div key={i} className="flex flex-col gap-1.5 pl-1">
@@ -139,7 +139,7 @@ export default function Hero() {
           <PanelHeader filename="village.ibra" />
           <div className="relative h-[280px] overflow-y-auto" ref={codeScrollRef}>
             <div className="sticky top-0 left-0 right-0 h-4 bg-gradient-to-b from-surface-warm to-transparent pointer-events-none z-10" />
-            <div className="px-4 pb-4 font-mono text-[13px] text-ink-muted">
+            <div className="px-4 pb-4 font-mono text-code text-ink-muted">
               {highlightIbra(displayed)}
               {isTyping && (
                 <span className="inline-block w-[7px] h-[15px] bg-teal-500 ml-0.5 animate-pulse motion-reduce:hidden" aria-hidden="true" />

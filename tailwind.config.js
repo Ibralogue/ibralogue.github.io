@@ -48,6 +48,11 @@ export default {
         sans: ['Inter', 'Roboto', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'ui-monospace', 'Consolas', 'monospace'],
       },
+      fontSize: {
+        '2xs': ['11px', { lineHeight: '1.4' }],
+        'code': ['13px', { lineHeight: '1.6' }],
+        'dialogue': ['15px', { lineHeight: '1.6' }],
+      },
       boxShadow: {
         card: '0 1px 2px 0 rgba(61,65,68,0.06), 0 1px 3px 1px rgba(61,65,68,0.16)',
       },

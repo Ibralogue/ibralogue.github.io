@@ -118,7 +118,7 @@ export default function SyntaxShowcase() {
           {/* Code panel */}
           <div className="border-b md:border-b-0 md:border-r border-surface-dim">
             <PanelHeader filename={tab.filename} />
-            <div className="bg-surface-warm p-5 font-mono text-[13px] text-ink-muted min-h-[220px]">
+            <div className="bg-surface-warm p-5 font-mono text-code text-ink-muted min-h-[220px]">
               {highlightIbra(tab.source)}
             </div>
           </div>
