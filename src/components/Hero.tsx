@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { useTypingEffect } from '../hooks/useTypingEffect'
 import { highlightIbra } from '../lib/highlightIbra'
 import { URLS } from '../constants'
@@ -21,28 +22,64 @@ We need someone brave enough to face it.
 Thank you. Be careful out there.
 `
 
-function DialogueBox({ source }: { source: string }) {
-  const lines = source.split('\n').filter((l) => l.trim())
+interface DialogueEntry {
+  type: 'line'
+  speaker: string
+  text: string
+}
 
+interface ChoiceGroup {
+  type: 'choices'
+  items: string[]
+}
+
+type DialogueItem = DialogueEntry | ChoiceGroup
+
+/** Parse typed source into a chat-log of speaker lines and choice groups */
+function parseDialogue(source: string): DialogueItem[] {
+  const raw = source.split('\n')
+  const items: DialogueItem[] = []
   let speaker = ''
-  let currentLine = ''
-  const choices: string[] = []
-  let choicesDone = false
+  let pendingChoices: string[] = []
 
-  for (const line of lines) {
+  for (const line of raw) {
     const t = line.trim()
-    if (t.startsWith('{{')) continue
+    if (!t || t.startsWith('{{')) continue
+
     const spk = t.match(/^\[(.+)\]$/)
     if (spk) { speaker = spk[1]; continue }
+
     const ch = t.match(/^-\s+(.+?)\s*->/)
     if (ch) {
-      choices.push(ch[1])
-      // Show choices once the full first choice group has typed
-      if (choices.length >= 2 && !choicesDone) choicesDone = true
+      pendingChoices.push(ch[1])
       continue
     }
-    currentLine = t
+
+    // Flush any pending choices before a new dialogue line
+    if (pendingChoices.length > 0) {
+      items.push({ type: 'choices', items: [...pendingChoices] })
+      pendingChoices = []
+    }
+
+    items.push({ type: 'line', speaker, text: t })
   }
+
+  // Flush trailing choices
+  if (pendingChoices.length > 0) {
+    items.push({ type: 'choices', items: pendingChoices })
+  }
+
+  return items
+}
+
+function DialogueBox({ source }: { source: string }) {
+  const items = parseDialogue(source)
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = scrollRef.current
+    if (el) el.scrollTop = el.scrollHeight
+  }, [items.length])
 
   return (
     <div className="rounded-lg border border-surface-dim bg-white shadow-card overflow-hidden">
@@ -56,24 +93,36 @@ function DialogueBox({ source }: { source: string }) {
           Dialogue Preview
         </span>
       </div>
-      <div className="p-5 min-h-[220px] flex flex-col justify-between">
-        <div>
-          {speaker && (
-            <p className="text-xs font-semibold text-teal-500 uppercase tracking-wider mb-2">{speaker}</p>
-          )}
-          {currentLine && (
-            <p className="text-ink text-[15px] leading-relaxed">{currentLine}</p>
+      <div
+        ref={scrollRef}
+        className="relative p-5 h-[260px] overflow-y-auto"
+      >
+        {/* Top fade when scrollable */}
+        <div className="sticky top-0 left-0 right-0 h-6 -mt-5 mb-0 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
+
+        <div className="space-y-3">
+          {items.map((item, i) =>
+            item.type === 'line' ? (
+              <div key={i}>
+                <p className="text-xs font-semibold text-teal-500 uppercase tracking-wider mb-0.5">
+                  {item.speaker}
+                </p>
+                <p className="text-ink text-[15px] leading-relaxed">{item.text}</p>
+              </div>
+            ) : (
+              <div key={i} className="flex flex-col gap-1.5 pl-1">
+                {item.items.map((c, j) => (
+                  <div
+                    key={j}
+                    className="text-left text-sm px-3 py-1.5 rounded border border-surface-dim bg-surface-muted text-ink-muted"
+                  >
+                    {c}
+                  </div>
+                ))}
+              </div>
+            )
           )}
         </div>
-        {choicesDone && choices.length > 0 && (
-          <div className="mt-4 flex flex-col gap-1.5">
-            {choices.slice(0, 2).map((c, i) => (
-              <div key={i} className="text-left text-sm px-3 py-1.5 rounded border border-surface-dim bg-surface-muted text-ink-muted">
-                {c}
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   )
