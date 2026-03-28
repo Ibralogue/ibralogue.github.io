@@ -1,4 +1,4 @@
-export const VERSION = 'v1.0.0'
+export const VERSION = __IBRALOGUE_VERSION__
 
 const DOCS_BASE = 'https://ibralogue.github.io/Ibralogue'
 
@@ -6,12 +6,12 @@ export const URLS = {
   github: 'https://github.com/Ibralogue/Ibralogue',
   docs: `${DOCS_BASE}/index.html`,
   quickstart: `${DOCS_BASE}/manual/quickstart.html`,
-  release: 'https://github.com/Ibralogue/Ibralogue/releases/tag/v1.0.0',
+  release: `https://github.com/Ibralogue/Ibralogue/releases/tag/${VERSION}`,
   discord: 'https://discord.gg/xa3zvF6tP7',
   patreon: 'https://www.patreon.com/ibrahh',
   issues: 'https://github.com/Ibralogue/Ibralogue/issues/new/choose',
   gitUrl: 'https://github.com/Ibralogue/Ibralogue.git',
-  gitUrlVersioned: 'https://github.com/Ibralogue/Ibralogue.git#v1.0.0',
+  gitUrlVersioned: `https://github.com/Ibralogue/Ibralogue.git#${VERSION}`,
   manual: {
     basicSyntax:  `${DOCS_BASE}/manual/basic-syntax.html`,
     choices:      `${DOCS_BASE}/manual/choices.html`,
