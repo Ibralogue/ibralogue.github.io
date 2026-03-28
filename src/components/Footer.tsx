@@ -86,12 +86,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-surface-dim flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-10 pt-6 border-t border-surface-dim">
           <p className="text-xs text-ink-faint">
             MIT License &middot; Unity 2022.3+
-          </p>
-          <p className="text-xs text-ink-faint">
-            Built with React + Tailwind CSS
           </p>
         </div>
       </div>
