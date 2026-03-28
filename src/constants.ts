@@ -1,6 +1,6 @@
 export const VERSION = __IBRALOGUE_VERSION__
 
-const DOCS_BASE = 'https://ibralogue.github.io/Ibralogue'
+const DOCS_BASE = 'https://ibralogue.github.io/docs'
 
 export const URLS = {
   github: 'https://github.com/Ibralogue/Ibralogue',
