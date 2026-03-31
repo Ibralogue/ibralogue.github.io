@@ -667,7 +667,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ibralogue.Parser.Choice",
-      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Choice.yml\" sourcestartlinenumber=\"1\">The choice class defines an option that can lead to a conversation.</p>\n"
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Choice.yml\" sourcestartlinenumber=\"1\">Defines a player-facing choice option that can branch to a conversation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -751,7 +751,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ibralogue.Parser.Line",
-      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Line.yml\" sourcestartlinenumber=\"1\">The Line struct contains information about an individual line of dialogue.</p>\n"
+      "Summary": "<p sourcefile=\"ref/Ibralogue.Parser.Line.yml\" sourcestartlinenumber=\"1\">Contains information about an individual line of dialogue, including\nits speaker, text content, metadata, and optional jump target.</p>\n"
     },
     {
       "type": "ManagedReference",

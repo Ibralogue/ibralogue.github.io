@@ -1357,7 +1357,14 @@ references:
 - uid: Ibralogue.Parser.Choice.ChoiceName
   name: ChoiceName
   href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_ChoiceName
-  commentId: F:Ibralogue.Parser.Choice.ChoiceName
+  commentId: P:Ibralogue.Parser.Choice.ChoiceName
+  fullName: Ibralogue.Parser.Choice.ChoiceName
+  nameWithType: Choice.ChoiceName
+- uid: Ibralogue.Parser.Choice.ChoiceName*
+  name: ChoiceName
+  href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_ChoiceName_
+  commentId: Overload:Ibralogue.Parser.Choice.ChoiceName
+  isSpec: "True"
   fullName: Ibralogue.Parser.Choice.ChoiceName
   nameWithType: Choice.ChoiceName
 - uid: Ibralogue.Parser.Choice.HasMetadata(System.String)
@@ -1376,18 +1383,32 @@ references:
   isSpec: "True"
   fullName: Ibralogue.Parser.Choice.HasMetadata
   nameWithType: Choice.HasMetadata
-- uid: Ibralogue.Parser.Choice.LeadingConversationName
-  name: LeadingConversationName
-  href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_LeadingConversationName
-  commentId: F:Ibralogue.Parser.Choice.LeadingConversationName
-  fullName: Ibralogue.Parser.Choice.LeadingConversationName
-  nameWithType: Choice.LeadingConversationName
 - uid: Ibralogue.Parser.Choice.Metadata
   name: Metadata
   href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_Metadata
-  commentId: F:Ibralogue.Parser.Choice.Metadata
+  commentId: P:Ibralogue.Parser.Choice.Metadata
   fullName: Ibralogue.Parser.Choice.Metadata
   nameWithType: Choice.Metadata
+- uid: Ibralogue.Parser.Choice.Metadata*
+  name: Metadata
+  href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_Metadata_
+  commentId: Overload:Ibralogue.Parser.Choice.Metadata
+  isSpec: "True"
+  fullName: Ibralogue.Parser.Choice.Metadata
+  nameWithType: Choice.Metadata
+- uid: Ibralogue.Parser.Choice.TargetConversation
+  name: TargetConversation
+  href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_TargetConversation
+  commentId: P:Ibralogue.Parser.Choice.TargetConversation
+  fullName: Ibralogue.Parser.Choice.TargetConversation
+  nameWithType: Choice.TargetConversation
+- uid: Ibralogue.Parser.Choice.TargetConversation*
+  name: TargetConversation
+  href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_TargetConversation_
+  commentId: Overload:Ibralogue.Parser.Choice.TargetConversation
+  isSpec: "True"
+  fullName: Ibralogue.Parser.Choice.TargetConversation
+  nameWithType: Choice.TargetConversation
 - uid: Ibralogue.Parser.Choice.TryGetMetadataValue(System.String,System.String@)
   name: TryGetMetadataValue(string, out string)
   href: ref/Ibralogue.Parser.Choice.html#Ibralogue_Parser_Choice_TryGetMetadataValue_System_String_System_String__
@@ -1598,25 +1619,53 @@ references:
 - uid: Ibralogue.Parser.Line.JumpTarget
   name: JumpTarget
   href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_JumpTarget
-  commentId: F:Ibralogue.Parser.Line.JumpTarget
+  commentId: P:Ibralogue.Parser.Line.JumpTarget
+  fullName: Ibralogue.Parser.Line.JumpTarget
+  nameWithType: Line.JumpTarget
+- uid: Ibralogue.Parser.Line.JumpTarget*
+  name: JumpTarget
+  href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_JumpTarget_
+  commentId: Overload:Ibralogue.Parser.Line.JumpTarget
+  isSpec: "True"
   fullName: Ibralogue.Parser.Line.JumpTarget
   nameWithType: Line.JumpTarget
 - uid: Ibralogue.Parser.Line.LineContent
   name: LineContent
   href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_LineContent
-  commentId: F:Ibralogue.Parser.Line.LineContent
+  commentId: P:Ibralogue.Parser.Line.LineContent
+  fullName: Ibralogue.Parser.Line.LineContent
+  nameWithType: Line.LineContent
+- uid: Ibralogue.Parser.Line.LineContent*
+  name: LineContent
+  href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_LineContent_
+  commentId: Overload:Ibralogue.Parser.Line.LineContent
+  isSpec: "True"
   fullName: Ibralogue.Parser.Line.LineContent
   nameWithType: Line.LineContent
 - uid: Ibralogue.Parser.Line.Silent
   name: Silent
   href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_Silent
-  commentId: F:Ibralogue.Parser.Line.Silent
+  commentId: P:Ibralogue.Parser.Line.Silent
+  fullName: Ibralogue.Parser.Line.Silent
+  nameWithType: Line.Silent
+- uid: Ibralogue.Parser.Line.Silent*
+  name: Silent
+  href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_Silent_
+  commentId: Overload:Ibralogue.Parser.Line.Silent
+  isSpec: "True"
   fullName: Ibralogue.Parser.Line.Silent
   nameWithType: Line.Silent
 - uid: Ibralogue.Parser.Line.Speaker
   name: Speaker
   href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_Speaker
-  commentId: F:Ibralogue.Parser.Line.Speaker
+  commentId: P:Ibralogue.Parser.Line.Speaker
+  fullName: Ibralogue.Parser.Line.Speaker
+  nameWithType: Line.Speaker
+- uid: Ibralogue.Parser.Line.Speaker*
+  name: Speaker
+  href: ref/Ibralogue.Parser.Line.html#Ibralogue_Parser_Line_Speaker_
+  commentId: Overload:Ibralogue.Parser.Line.Speaker
+  isSpec: "True"
   fullName: Ibralogue.Parser.Line.Speaker
   nameWithType: Line.Speaker
 - uid: Ibralogue.Parser.Line.TryGetMetadataValue(System.String,System.String@)
